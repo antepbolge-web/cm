@@ -1,0 +1,62 @@
+<style id="ozel160-css">
+/* 2) Esitle (bulut) simgesi gizli; kod yerinde kalir. Bu satiri silince geri gelir. */
+#cafer-off-cloud,body button[style*="99998"]{display:none!important}
+body .bar .in{padding-right:8px!important}
+
+/* 3) Ust panel: tum sayfalarda [geri] [menu] baslik ... [ana sayfa] [ara] */
+#amiriG{order:0}#amiriB{order:1}#amiriT{order:2!important}#rdM{order:3!important}#amiriH{order:4!important}#amiriS{order:5}
+.amiri .ab #amiriS{min-width:40px;width:40px;height:40px;padding:0!important;display:grid;place-items:center}
+.amiri .ab #amiriG,.amiri .ab #amiriH{min-width:40px;width:40px;height:40px;padding:0!important;display:grid;place-items:center}
+.amiri .ab #amiriB{min-width:40px;width:40px;height:40px;padding:0!important;display:grid;place-items:center}
+.amiri .ab svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+/* 5) Populer | Yeni | Kategoriler seridi */
+#ozelSekme{position:sticky;top:calc(52px + env(safe-area-inset-top,0px));z-index:5;display:flex;gap:8px;padding:8px 10px;background:var(--bg);border-bottom:1px solid var(--cardb)}
+#ozelSekme[hidden]{display:none}
+#ozelSekme button{flex:1;min-width:0;min-height:44px;border-radius:999px;border:1px solid var(--cardb);background:var(--card);color:var(--txt);font:600 16px system-ui,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:0 6px}
+#ozelSekme button[aria-selected=true]{background:var(--bar);color:#fff;border-color:var(--gold)}
+
+/* 6) Kur'an ve Mektubat: ust panel asagi dogru genis */
+body:has(#amiriF iframe[data-k="quran"]:not([hidden])) .amiri .ab,
+body:has(#amiriF iframe[data-k="mektubat"]:not([hidden])) .amiri .ab{height:auto!important;min-height:96px;align-items:center!important;padding:10px!important}
+body:has(#amiriF iframe[data-k="quran"]:not([hidden])) .amiri .ab button,
+body:has(#amiriF iframe[data-k="mektubat"]:not([hidden])) .amiri .ab button{width:48px!important;height:48px!important;min-height:48px!important}
+body:has(#amiriF iframe[data-k="quran"]:not([hidden])) #amiriT,
+body:has(#amiriF iframe[data-k="mektubat"]:not([hidden])) #amiriT{font-size:20px!important}
+</style>
+<script id="ozel160-js">
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  function T(s){try{return tx(s)}catch(e){return s}}
+
+  /* 3) Kur'an/Mektubat paneline "Ara" simgesi */
+  function amiriAra(){
+    var ab=document.querySelector('#amiri .ab');
+    if(!ab||$('amiriS'))return;
+    var b=document.createElement('button');
+    b.id='amiriS';b.type='button';b.setAttribute('aria-label','Ara');
+    b.innerHTML='<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>';
+    b.onclick=function(){closeAmiri();setTimeout(function(){try{openSearch()}catch(e){go({n:'search',q:''})}},60)};
+    ab.appendChild(b);
+  }
+
+  /* 5) Populer | Yeni | Kategoriler seridi */
+  function serit(){
+    var bar=$('bar');if(!bar)return;
+    var n=$('ozelSekme');
+    if(!n){n=document.createElement('nav');n.id='ozelSekme';n.setAttribute('aria-label','Bölümler');bar.insertAdjacentElement('afterend',n)}
+    var on=(screen.n==='home'&&(tab==='best'||tab==='new_websites'))||screen.n==='cats';
+    n.hidden=!on;if(!on)return;
+    var cur=screen.n==='cats'?'cats':(tab==='new_websites'?'new':'pop');
+    var L=[['pop','Popüler',function(){toHome();setTab('best')}],
+           ['new','Yeni',function(){toHome();setTab('new_websites')}],
+           ['cats','Kategoriler',function(){if(screen.n!=='cats')go({n:'cats'})}]];
+    n.textContent='';
+    L.forEach(function(x){var b=document.createElement('button');b.type='button';b.textContent=T(x[1]);
+      b.setAttribute('aria-selected',x[0]===cur);b.onclick=x[2];n.appendChild(b)});
+  }
+  if(typeof draw==='function'){var _d=draw;draw=function(){var r=_d.apply(this,arguments);try{serit()}catch(e){}return r}}
+  amiriAra();
+  try{serit()}catch(e){}
+})();
+</script>
