@@ -11,6 +11,13 @@ Paket: `tr.cafer.aimerkezi` (Capacitor/WebView). Tüm arayüz `assets/public/ind
 6. Kur'an ve Mektubat üst paneli yüksek (min 96 px, simgeler 48 px)
 - Menü sürüm yazısı: `APK 1.6.1`, versionCode 2.
 
+## 1.6.2 (24.10.2026, telefon ekran görüntülerine göre)
+7. Telefon koyu modda iken uygulamada "Açık" tema seçilince kartlar koyu kalıyordu (sayfa sonundaki `prefers-color-scheme:dark` + `html:not([data-theme])` kuralı). Çözüm: `temaEsle()` body'deki `light` sınıfını `html[data-theme]`'e yansıtır.
+8. Kur'an-ı Kerim ve Mektubat menü girişleri gizli (CSS; sayfalar ve PDF APK'da duruyor, satırı silince geri gelir).
+9. Sekme şeridi: Popüler | Yeni | Kategoriler | Favoriler.
+10. Ayarlar'dan kaldırılanlar (CSS ile gizli): Yazı tipi, Açılış sayfası, Okuma kolaylığı, Hatırlatıcılar, Gizli klasörler, Menü düzenini sıfırla. Kalanlar: Dil, Tema, Yazı boyutu, Kart düzeni, Yedekle / Geri yükle, Hakkında.
+- Menü sürüm yazısı `APK 1.6.2`, versionCode 3. Eski 1.6.1 APK'ları Drive `apk-indir\Eski`'de.
+
 ## Dosyalar
 - `cafer-ai-merkezi-1.6.0.apk`: özgün, Android Debug imzalı (telefondaki).
 - `cafer-ai-merkezi-1.6.1.apk`: aynı paket adı; telefondaki üstüne kurulmaz (imza farklı), önce eskisi silinmeli.

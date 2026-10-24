@@ -11,9 +11,9 @@ body .bar .in{padding-right:8px!important}
 .amiri .ab svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 
 /* 5) Populer | Yeni | Kategoriler seridi */
-#ozelSekme{position:sticky;top:calc(52px + env(safe-area-inset-top,0px));z-index:5;display:flex;gap:8px;padding:8px 10px;background:var(--bg);border-bottom:1px solid var(--cardb)}
+#ozelSekme{position:sticky;top:calc(52px + env(safe-area-inset-top,0px));z-index:5;display:flex;gap:6px;padding:8px 10px;background:var(--bg);border-bottom:1px solid var(--cardb)}
 #ozelSekme[hidden]{display:none}
-#ozelSekme button{flex:1;min-width:0;min-height:44px;border-radius:999px;border:1px solid var(--cardb);background:var(--card);color:var(--txt);font:600 16px system-ui,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:0 6px}
+#ozelSekme button{flex:1;min-width:0;min-height:44px;border-radius:999px;border:1px solid var(--cardb);background:var(--card);color:var(--txt);font:600 14px system-ui,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:0 2px}
 #ozelSekme button[aria-selected=true]{background:var(--bar);color:#fff;border-color:var(--gold)}
 
 /* 6) Kur'an ve Mektubat: ust panel asagi dogru genis */
@@ -23,6 +23,12 @@ body:has(#amiriF iframe[data-k="quran"]:not([hidden])) .amiri .ab button,
 body:has(#amiriF iframe[data-k="mektubat"]:not([hidden])) .amiri .ab button{width:48px!important;height:48px!important;min-height:48px!important}
 body:has(#amiriF iframe[data-k="quran"]:not([hidden])) #amiriT,
 body:has(#amiriF iframe[data-k="mektubat"]:not([hidden])) #amiriT{font-size:20px!important}
+
+/* 7) Kur'an ve Mektubat menu girisleri gizli. Bu iki satiri silince geri gelir. */
+.drawer .di[onclick*="openApp('quran')"],.drawer .di[onclick*="openApp('mektubat')"]{display:none!important}
+
+/* 8) Ayarlar'dan kaldirilan basliklar (geri almak icin bu satiri silin) */
+.drawer .di[onclick*="cycleFont()"],.drawer .di[onclick*="openAcilis()"],.drawer .di[onclick*="openOkuma()"],.drawer .di[onclick*="openHatirlat()"],.drawer .di[onclick*="toggleHiddenFolders()"],.drawer .di[onclick*="resetMenuLayout()"]{display:none!important}
 </style>
 <script id="ozel160-js">
 (function(){
@@ -45,17 +51,25 @@ body:has(#amiriF iframe[data-k="mektubat"]:not([hidden])) #amiriT{font-size:20px
     var bar=$('bar');if(!bar)return;
     var n=$('ozelSekme');
     if(!n){n=document.createElement('nav');n.id='ozelSekme';n.setAttribute('aria-label','Bölümler');bar.insertAdjacentElement('afterend',n)}
-    var on=(screen.n==='home'&&(tab==='best'||tab==='new_websites'))||screen.n==='cats';
+    var on=(screen.n==='home'&&(tab==='best'||tab==='new_websites'))||screen.n==='cats'||screen.n==='favs';
     n.hidden=!on;if(!on)return;
-    var cur=screen.n==='cats'?'cats':(tab==='new_websites'?'new':'pop');
+    var cur=screen.n==='cats'?'cats':screen.n==='favs'?'favs':(tab==='new_websites'?'new':'pop');
     var L=[['pop','Popüler',function(){toHome();setTab('best')}],
            ['new','Yeni',function(){toHome();setTab('new_websites')}],
-           ['cats','Kategoriler',function(){if(screen.n!=='cats')go({n:'cats'})}]];
+           ['cats','Kategoriler',function(){if(screen.n!=='cats')go({n:'cats'})}],
+           ['favs','Favoriler',function(){if(screen.n!=='favs')go({n:'favs'})}]];
     n.textContent='';
     L.forEach(function(x){var b=document.createElement('button');b.type='button';b.textContent=T(x[1]);
       b.setAttribute('aria-selected',x[0]===cur);b.onclick=x[2];n.appendChild(b)});
   }
   if(typeof draw==='function'){var _d=draw;draw=function(){var r=_d.apply(this,arguments);try{serit()}catch(e){}return r}}
+  /* 4) Acik/koyu secimini html'e de yansit: telefon koyu modda iken Acik tema koyu kalmasin */
+  function temaEsle(){
+    var l=document.body.classList.contains('light');
+    document.documentElement.setAttribute('data-theme',l?'light':'dark');
+  }
+  try{new MutationObserver(temaEsle).observe(document.body,{attributes:true,attributeFilter:['class']})}catch(e){}
+  temaEsle();
   amiriAra();
   try{serit()}catch(e){}
 })();
