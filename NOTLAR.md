@@ -18,6 +18,13 @@ Paket: `tr.cafer.aimerkezi` (Capacitor/WebView). Tüm arayüz `assets/public/ind
 10. Ayarlar'dan kaldırılanlar (CSS ile gizli): Yazı tipi, Açılış sayfası, Okuma kolaylığı, Hatırlatıcılar, Gizli klasörler, Menü düzenini sıfırla. Kalanlar: Dil, Tema, Yazı boyutu, Kart düzeni, Yedekle / Geri yükle, Hakkında.
 - Menü sürüm yazısı `APK 1.6.2`, versionCode 3. Eski 1.6.1 APK'ları Drive `apk-indir\Eski`'de.
 
+## 1.6.3 (24.10.2026)
+11. Haberler: sayfanın üstünde "Türkçe | İngilizce" şeridi; tek dil görünür, seçim `cafer_haber_dil` ile hatırlanır. Menüdeki iki giriş (Yapay Zekâ / Teknoloji) aynı kaldı.
+12. Şerit başlıkları (Popüler/Yeni/Kategoriler/Favoriler ve Türkçe/İngilizce) uzun basıp sürükleyince yer değiştirir; sıra `cafer_serit_sira` / `cafer_haber_sira` anahtarlarında. Sayfanın hazır `sortable()` işlevi kullanıldı (380 ms uzun basma). Menü zaten sürüklenebiliyordu (`cafer_menu_order`). Sürükleme bilgisayarda denenemedi, telefonda denenmeli.
+13. Sade ve modern tema: düz kartlar (gölge/gradyan yok, 1 px çizgi, 16 px köşe), düz üst panel (kutusuz simgeler), tek vurgu rengi turkuaz (altın vurgular kalktı), sade menü, düz pencereler; Not Defteri iframe'inde gölgeler kapalı, zemin renkleri uyumlu. Renkler: açık zemin #f6f7f9 / kart #fff; koyu zemin #111317 / kart #1a1d23. Blok `ozel160.html` içinde "11)" başlığı; silince eski görünüm döner. 8 ekran iki temada Edge ile kontrol edildi.
+- Kullanıcının 11:21'de gönderdiği "bulut simgesi duruyor" görüntüleri eski uygulamadan (menüde "APK 1.6" ve Kur'an girişi görünüyor). Yeni uygulama "Cafer AI Yeni" adıyla ayrı kurulu; iki uygulamanın simgesi aynı.
+- Menü sürüm yazısı `APK 1.6.3`, versionCode 4. 1.6.2 APK'ları `apk-indir\Eski`'de.
+
 ## Dosyalar
 - `cafer-ai-merkezi-1.6.0.apk`: özgün, Android Debug imzalı (telefondaki).
 - `cafer-ai-merkezi-1.6.1.apk`: aynı paket adı; telefondaki üstüne kurulmaz (imza farklı), önce eskisi silinmeli.

@@ -10,11 +10,16 @@ body .bar .in{padding-right:8px!important}
 .amiri .ab #amiriB{min-width:40px;width:40px;height:40px;padding:0!important;display:grid;place-items:center}
 .amiri .ab svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 
-/* 5) Populer | Yeni | Kategoriler seridi */
-#ozelSekme{position:sticky;top:calc(52px + env(safe-area-inset-top,0px));z-index:5;display:flex;gap:6px;padding:8px 10px;background:var(--bg);border-bottom:1px solid var(--cardb)}
-#ozelSekme[hidden]{display:none}
-#ozelSekme button{flex:1;min-width:0;min-height:44px;border-radius:999px;border:1px solid var(--cardb);background:var(--card);color:var(--txt);font:600 14px system-ui,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:0 2px}
-#ozelSekme button[aria-selected=true]{background:var(--bar);color:#fff;border-color:var(--gold)}
+/* 5) Populer | Yeni | Kategoriler | Favoriler seridi ve 9) Haber dili seridi (ortak gorunum) */
+.ozelSerit{position:sticky;top:calc(52px + env(safe-area-inset-top,0px));z-index:5;display:flex;gap:6px;padding:8px 10px;background:var(--bg);border-bottom:1px solid var(--cardb)}
+.ozelSerit[hidden]{display:none}
+.ozelSerit button{flex:1;min-width:0;min-height:44px;border-radius:999px;border:1px solid var(--cardb);background:var(--card);color:var(--txt);font:600 14px system-ui,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:0 2px}
+.ozelSerit button[aria-selected=true]{background:var(--bar);color:#fff;border-color:var(--gold)}
+/* 10) Serit basliklari uzun basip suruklenir */
+.ozelSerit button{user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.ozelSerit button.lift{transform:scale(1.06);box-shadow:0 6px 16px rgba(0,0,0,.35);opacity:1;outline:0;z-index:3}
+/* 9) Haber sayfasinda tek dil gosterilirken "Turkce Haberler / Ingilizce Haberler" ara basliklari gizli */
+html.haber-tek #main .lh{display:none}
 
 /* 6) Kur'an ve Mektubat: ust panel asagi dogru genis */
 body:has(#amiriF iframe[data-k="quran"]:not([hidden])) .amiri .ab,
@@ -29,6 +34,48 @@ body:has(#amiriF iframe[data-k="mektubat"]:not([hidden])) #amiriT{font-size:20px
 
 /* 8) Ayarlar'dan kaldirilan basliklar (geri almak icin bu satiri silin) */
 .drawer .di[onclick*="cycleFont()"],.drawer .di[onclick*="openAcilis()"],.drawer .di[onclick*="openOkuma()"],.drawer .di[onclick*="openHatirlat()"],.drawer .di[onclick*="toggleHiddenFolders()"],.drawer .di[onclick*="resetMenuLayout()"]{display:none!important}
+
+/* 11) Sade ve modern tema: duz yuzeyler, tek vurgu rengi (turkuaz), golge ve gradyan yok.
+   Renkler */
+html[data-theme="light"],html[data-theme="light"] body,html[data-theme="light"] body.light{--bar:#0f8f83;--bg:#f6f7f9;--card:#ffffff;--cardb:#e4e7eb;--txt:#1f2328;--sub:#6b7280;--pill:#e8f4f2;--pillb:#e4e7eb;--pillt:#0b7a70;--drawer:#ffffff;--drawerh:#ffffff;--sel:#e6f4f2;--gold:#0f8f83;--tab:#0f8f83;--line:#e4e7eb;--pk-cizgi:#e4e7eb}
+html[data-theme="dark"],html[data-theme="dark"] body{--bar:#0d6e64;--bg:#111317!important;--card:#1a1d23;--cardb:#2a2e36;--txt:#e6e8eb;--sub:#9aa1a9;--pill:#1c2b2a;--pillb:#2a2e36;--pillt:#4fd1c5;--drawer:#15181d;--drawerh:#15181d;--sel:#1b2f2d;--gold:#4fd1c5;--tab:#4fd1c5;--line:#2a2e36;--pk-cizgi:#2a2e36!important}
+html[data-theme] body{background:var(--bg)!important;color:var(--txt)!important}
+/* Ust panel */
+html[data-theme] body .bar{background:var(--bar)!important;box-shadow:none!important;border-bottom:0!important}
+html[data-theme] body .bar h1{font-size:18px!important;font-weight:600!important}
+html[data-theme] body .bar .ib{background:transparent!important;border-radius:12px!important;color:#fff!important}
+html[data-theme] body .bar .ib:active{background:rgba(255,255,255,.18)!important}
+html[data-theme] body .amiri .ab button{background:transparent!important;border-radius:12px!important}
+/* Seritler */
+html[data-theme] .ozelSerit{gap:8px;padding:10px 12px;border-bottom:1px solid var(--cardb)}
+html[data-theme] .ozelSerit button{min-height:40px;border-radius:12px;border:1px solid var(--cardb);background:var(--card);color:var(--txt)}
+html[data-theme] .ozelSerit button[aria-selected=true]{background:var(--bar);border-color:var(--bar);color:#fff}
+/* Kartlar */
+html[data-theme] body:not(#a):not(#b):not(#c):not(#d) .grid:has(> article.card){gap:12px!important}
+html[data-theme] body:not(#a):not(#b):not(#c):not(#d) article.card{background:var(--card)!important;background-image:none!important;border:1px solid var(--cardb)!important;box-shadow:none!important;border-radius:16px!important;padding:14px 12px 14px!important}
+html[data-theme] body:not(#a):not(#b):not(#c):not(#d) article.card > .ico{margin:10px auto 0!important;border-radius:14px!important;box-shadow:none!important}
+html[data-theme] body:not(#a):not(#b):not(#c):not(#d) article.card > .ico.letter{background:var(--bar)!important;background-image:none!important;color:#fff!important}
+html[data-theme] body:not(#a):not(#b):not(#c):not(#d) article.card > h3{font-size:17px!important;font-weight:600!important;color:var(--txt)!important;margin:12px 0 4px!important}
+html[data-theme] body:not(#a):not(#b):not(#c):not(#d) article.card > p{font-size:14px!important;color:var(--sub)!important;line-height:1.4!important}
+html[data-theme] body:not(#a):not(#b):not(#c):not(#d) article.card > .more{background:var(--pill)!important;border:0!important;color:var(--pillt)!important;font-weight:600!important;padding:8px 18px!important}
+html[data-theme] body:not(#a):not(#b):not(#c):not(#d) article.card > .star{color:var(--sub)!important}
+html[data-theme] body:not(#a):not(#b):not(#c):not(#d) article.card.lift{box-shadow:0 10px 24px rgba(0,0,0,.25)!important;transform:scale(1.04)!important}
+html[data-theme] body .cats .card h3{font-size:16px!important;font-weight:600!important}
+html[data-theme] body .cats .card p{font-size:13px!important}
+html[data-theme] body #main .lh{font-size:15px!important;font-weight:600!important;color:var(--sub)!important}
+/* Menu */
+html[data-theme] body .drawer{background:var(--drawer)!important;border-radius:0 20px 20px 0!important;box-shadow:0 0 40px rgba(0,0,0,.25)!important}
+html[data-theme] body .dh{background:var(--drawerh)!important;border-bottom:1px solid var(--cardb)!important;margin-bottom:8px!important;padding-top:calc(28px + env(safe-area-inset-top,0px))!important;padding-bottom:16px!important}
+html[data-theme] body .dh div{font-size:19px!important;font-weight:600!important;color:var(--txt)!important}
+html[data-theme] body .di{min-height:46px!important;height:auto!important;margin:2px 10px!important;padding:4px 10px!important;border-radius:12px!important;font-size:17px!important;font-weight:500!important;gap:12px!important;color:var(--txt)!important}
+html[data-theme] body .di svg{width:38px!important;height:38px!important;padding:8px!important;background:transparent!important;border-radius:10px!important;color:var(--sub)!important}
+html[data-theme] body .di.sel{background:var(--sel)!important;color:var(--pillt)!important}
+html[data-theme] body .di.sel svg{background:var(--bar)!important;color:#fff!important}
+html[data-theme] body .dgrp{color:var(--sub)!important;font-size:13px!important;font-weight:600!important;letter-spacing:.6px;text-transform:uppercase}
+/* Pencereler */
+html[data-theme] body .box{border-radius:16px!important;border:1px solid var(--cardb)!important;box-shadow:0 20px 50px rgba(0,0,0,.3)!important;background:var(--card)!important;color:var(--txt)!important}
+html[data-theme] body .box h2{font-size:19px!important;font-weight:600!important}
+html[data-theme] body .box button{border-radius:12px!important;box-shadow:none!important;background-image:none!important}
 </style>
 <script id="ozel160-js">
 (function(){
@@ -46,23 +93,50 @@ body:has(#amiriF iframe[data-k="mektubat"]:not([hidden])) #amiriT{font-size:20px
     ab.appendChild(b);
   }
 
-  /* 5) Populer | Yeni | Kategoriler seridi */
+  /* 10) Şerit başlıkları: uzun basıp sürükleyince yer değiştirir, sıra hatırlanır (sayfanın sortable() işlevi) */
+  function sira(k){try{return JSON.parse(localStorage.getItem(k))||[]}catch(e){return []}}
+  function sirala(L,k){var o=sira(k);if(!o.length)return L;return L.slice().sort(function(a,b){var i=o.indexOf(a[0]),j=o.indexOf(b[0]);return (i<0?99:i)-(j<0?99:j)})}
+  function surukle(n,k){if(n.__srt)return;n.__srt=1;try{sortable(n,'button',function(){try{localStorage.setItem(k,JSON.stringify([].map.call(n.children,function(b){return b.dataset.v})))}catch(e){}})}catch(e){}}
+  function tiklamaEngelli(){try{return Date.now()-suppress<500}catch(e){return false}}
+
+  /* 5) Populer | Yeni | Kategoriler | Favoriler seridi */
   function serit(){
     var bar=$('bar');if(!bar)return;
     var n=$('ozelSekme');
-    if(!n){n=document.createElement('nav');n.id='ozelSekme';n.setAttribute('aria-label','Bölümler');bar.insertAdjacentElement('afterend',n)}
+    if(!n){n=document.createElement('nav');n.id='ozelSekme';n.className='ozelSerit';n.setAttribute('aria-label','Bölümler');bar.insertAdjacentElement('afterend',n)}
     var on=(screen.n==='home'&&(tab==='best'||tab==='new_websites'))||screen.n==='cats'||screen.n==='favs';
     n.hidden=!on;if(!on)return;
     var cur=screen.n==='cats'?'cats':screen.n==='favs'?'favs':(tab==='new_websites'?'new':'pop');
-    var L=[['pop','Popüler',function(){toHome();setTab('best')}],
+    var L=sirala([['pop','Popüler',function(){toHome();setTab('best')}],
            ['new','Yeni',function(){toHome();setTab('new_websites')}],
            ['cats','Kategoriler',function(){if(screen.n!=='cats')go({n:'cats'})}],
-           ['favs','Favoriler',function(){if(screen.n!=='favs')go({n:'favs'})}]];
+           ['favs','Favoriler',function(){if(screen.n!=='favs')go({n:'favs'})}]],'cafer_serit_sira');
     n.textContent='';
-    L.forEach(function(x){var b=document.createElement('button');b.type='button';b.textContent=T(x[1]);
-      b.setAttribute('aria-selected',x[0]===cur);b.onclick=x[2];n.appendChild(b)});
+    L.forEach(function(x){var b=document.createElement('button');b.type='button';b.dataset.v=x[0];b.textContent=T(x[1]);
+      b.setAttribute('aria-selected',x[0]===cur);b.onclick=function(){if(tiklamaEngelli())return;x[2]()};n.appendChild(b)});
+    surukle(n,'cafer_serit_sira');
   }
-  if(typeof draw==='function'){var _d=draw;draw=function(){var r=_d.apply(this,arguments);try{serit()}catch(e){}return r}}
+  /* 9) Haberler: Türkçe | İngilizce şeridi; sayfada tek dil görünür, seçim hatırlanır */
+  function haberDil(){try{return localStorage.getItem('cafer_haber_dil')==='en'?'en':'tr'}catch(e){return 'tr'}}
+  function haberUygula(){
+    var g1=$('g1'),g2=$('g2');if(!g1||!g2)return;
+    var en=haberDil()==='en';
+    g1.style.display=en?'none':'';g2.style.display=en?'':'none';
+    var n=$('ozelHaber');if(n)[].forEach.call(n.children,function(b){b.setAttribute('aria-selected',b.dataset.v===(en?'en':'tr'))});
+  }
+  function haberSerit(){
+    var bar=$('bar');if(!bar)return;
+    var n=$('ozelHaber');
+    var on=screen.n==='live'&&!!$('g2');
+    document.documentElement.classList.toggle('haber-tek',on);
+    if(!on){if(n)n.hidden=true;return}
+    if(!n){n=document.createElement('nav');n.id='ozelHaber';n.className='ozelSerit';n.setAttribute('aria-label','Haber dili');bar.insertAdjacentElement('afterend',n);
+      sirala([['tr','Türkçe'],['en','İngilizce']],'cafer_haber_sira').forEach(function(x){var b=document.createElement('button');b.type='button';b.dataset.v=x[0];b.textContent=T(x[1]);
+        b.onclick=function(){if(tiklamaEngelli())return;try{localStorage.setItem('cafer_haber_dil',x[0])}catch(e){}haberUygula();window.scrollTo(0,0)};n.appendChild(b)});
+      surukle(n,'cafer_haber_sira')}
+    n.hidden=false;haberUygula();
+  }
+  if(typeof draw==='function'){var _d=draw;draw=function(){var r=_d.apply(this,arguments);try{serit()}catch(e){}try{haberSerit()}catch(e){}return r}}
   /* 4) Acik/koyu secimini html'e de yansit: telefon koyu modda iken Acik tema koyu kalmasin */
   function temaEsle(){
     var l=document.body.classList.contains('light');
@@ -70,6 +144,17 @@ body:has(#amiriF iframe[data-k="mektubat"]:not([hidden])) #amiriT{font-size:20px
   }
   try{new MutationObserver(temaEsle).observe(document.body,{attributes:true,attributeFilter:['class']})}catch(e){}
   temaEsle();
+  /* 11b) Iframe sayfaları (Not Defteri vb.): gölgeler kapalı, köşeler ve zemin renkleri ana sayfayla uyumlu */
+  function ifrSade(f){try{var d=f.contentDocument;if(!d||!d.head)return;var L=document.body.classList.contains('light');
+    var st=d.getElementById('ozel-sade');if(!st){st=d.createElement('style');st.id='ozel-sade';d.head.appendChild(st)}
+    st.textContent=(L?':root{--bg:#f6f7f9!important;--card:#fff!important;--surface:#fff!important;--surface2:#eef1f4!important;--line:#e4e7eb!important;color-scheme:light}'
+                     :':root{--bg:#111317!important;--card:#1a1d23!important;--surface:#1a1d23!important;--surface2:#232730!important;--line:#2a2e36!important;color-scheme:dark}')
+      +'*{box-shadow:none!important}button,.btn,input,textarea,select,.c,.card,.item,.panel,.editor,.hk{border-radius:12px!important}';
+  }catch(e){}}
+  function ifrHepsi(){[].forEach.call(document.querySelectorAll('#amiriF iframe,#appHost iframe'),ifrSade)}
+  document.addEventListener('load',function(e){if(e.target&&e.target.tagName==='IFRAME')ifrSade(e.target)},true);
+  try{new MutationObserver(ifrHepsi).observe(document.body,{attributes:true,attributeFilter:['class']})}catch(e){}
+  ifrHepsi();
   amiriAra();
   try{serit()}catch(e){}
 })();
