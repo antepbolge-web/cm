@@ -66,7 +66,8 @@ html[data-theme] body #main .lh{font-size:15px!important;font-weight:600!importa
 /* Menu */
 html[data-theme] body .drawer{background:var(--drawer)!important;border-radius:0 20px 20px 0!important;box-shadow:0 0 40px rgba(0,0,0,.25)!important}
 html[data-theme] body .dh{background:var(--drawerh)!important;border-bottom:1px solid var(--cardb)!important;margin-bottom:8px!important;padding-top:calc(28px + env(safe-area-inset-top,0px))!important;padding-bottom:16px!important}
-html[data-theme] body .dh div{font-size:19px!important;font-weight:600!important;color:var(--txt)!important}
+html[data-theme] body .dh > div{font-size:19px!important;font-weight:600!important;color:var(--txt)!important}
+html[data-theme] body .dh > div > div{font-size:13px!important;font-weight:400!important;color:var(--sub)!important;opacity:1!important;margin-top:4px!important}
 html[data-theme] body .di{min-height:46px!important;height:auto!important;margin:2px 10px!important;padding:4px 10px!important;border-radius:12px!important;font-size:17px!important;font-weight:500!important;gap:12px!important;color:var(--txt)!important}
 html[data-theme] body .di svg{width:38px!important;height:38px!important;padding:8px!important;background:transparent!important;border-radius:10px!important;color:var(--sub)!important}
 html[data-theme] body .di.sel{background:var(--sel)!important;color:var(--pillt)!important}
@@ -155,6 +156,54 @@ html[data-theme] body .box button{border-radius:12px!important;box-shadow:none!i
   document.addEventListener('load',function(e){if(e.target&&e.target.tagName==='IFRAME')ifrSade(e.target)},true);
   try{new MutationObserver(ifrHepsi).observe(document.body,{attributes:true,attributeFilter:['class']})}catch(e){}
   ifrHepsi();
+
+  /* 12) Yedekle / Geri yükle: Drive MCP (claude.ai) APK'da yok; yedek dosya olarak üretilir ve paylaşım menüsüyle Drive'a gönderilir.
+         Yedek = tüm localStorage (notlar, hızlı not, favoriler, sıralamalar, ayarlar, Kur'an işaretleri). */
+  function yedekVeri(){var o={};try{for(var i=0;i<localStorage.length;i++){var k=localStorage.key(i);o[k]=localStorage.getItem(k)}}catch(e){}return JSON.stringify({cafer_yedek:1,t:new Date().toISOString(),veri:o})}
+  function yedekAd(){var d=new Date(),p=function(n){return (n<10?'0':'')+n};return 'cafer-ai-yedek-'+d.getFullYear()+p(d.getMonth()+1)+p(d.getDate())+'-'+p(d.getHours())+p(d.getMinutes())+'.json'}
+  function bildir(m){try{toast(m)}catch(e){try{alert(m)}catch(x){}}}
+  function yedekle(){
+    var C=window.Capacitor,ad=yedekAd(),veri=yedekVeri();
+    if(C&&C.nativePromise&&C.isNativePlatform&&C.isNativePlatform()){
+      C.nativePromise('Filesystem','writeFile',{path:ad,data:veri,directory:'CACHE',encoding:'utf8'})
+       .then(function(r){return C.nativePromise('Share','share',{title:'Cafer AI yedeği',text:'Cafer AI yedeği · '+ad,files:[r.uri],dialogTitle:'Yedeği nereye kaydedeyim?'})})
+       .then(function(){bildir('Yedek gönderildi: '+ad)})
+       .catch(function(e){var m=(e&&e.message)||String(e||'');if(/cancel|iptal/i.test(m))return;bildir('Yedek gönderilemedi: '+m)});
+    }else{
+      var b=new Blob([veri],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=ad;document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(a.href)},4000);bildir('Yedek indirildi: '+ad);
+    }
+  }
+  function geriYukle(){
+    var inp=document.createElement('input');inp.type='file';inp.accept='.json,application/json,text/plain';
+    inp.onchange=function(){var f=inp.files&&inp.files[0];if(!f)return;var r=new FileReader();
+      r.onload=function(){try{var j=JSON.parse(r.result);if(!j||j.cafer_yedek!==1||!j.veri||typeof j.veri!=='object')throw 0;var n=Object.keys(j.veri).length;
+          if(!confirm('Yedek: '+String(j.t||'').slice(0,16).replace('T',' ')+' · '+n+' kayıt.\nTelefondaki notlar, favoriler ve ayarlar bu yedekle DEĞİŞTİRİLECEK. Devam edilsin mi?'))return;
+          for(var k in j.veri){try{localStorage.setItem(k,j.veri[k])}catch(e){}}
+          bildir('Yedek yüklendi, sayfa yenileniyor');setTimeout(function(){location.reload()},700);
+        }catch(e){bildir('Bu dosya bir Cafer AI yedeği değil')}};
+      r.readAsText(f)};
+    inp.click();
+  }
+  window.openBackup=function(){
+    try{closeMenu()}catch(e){}
+    var b=$('box'),d=$('dlg');if(!b||!d)return;
+    b.innerHTML='';
+    var h=document.createElement('h2');h.textContent='Yedek';
+    var p=document.createElement('p');p.textContent='Yedek dosyası notları, hızlı notu, favorileri, sıralamaları ve ayarları içerir. "Yedekle" dosyayı paylaşım menüsüyle Google Drive\'a (ya da seçtiğin yere) gönderir; "Geri yükle" daha önce kaydettiğin yedek dosyasını seçer.';
+    var y=document.createElement('button');y.type='button';y.textContent='Yedekle (Drive\'a gönder)';y.onclick=function(){closeDlg();yedekle()};
+    var g=document.createElement('button');g.type='button';g.textContent='Geri yükle (dosya seç)';g.onclick=function(){closeDlg();geriYukle()};
+    [y,g].forEach(function(x){x.style.cssText='display:block;width:100%;margin:8px 0;min-height:48px;font:600 17px system-ui,sans-serif;border:1px solid var(--cardb);border-radius:12px;background:var(--pill);color:var(--pillt)'});
+    var row=document.createElement('div');row.className='row';var c=document.createElement('button');c.type='button';c.textContent='Kapat';c.onclick=closeDlg;row.appendChild(c);
+    b.appendChild(h);b.appendChild(p);b.appendChild(y);b.appendChild(g);b.appendChild(row);
+    d.hidden=false;
+  };
+  /* 13) Telefonda dikey sürükleme (menü, kartlar): Chrome, dokunma başladığında passive:false bir touchmove dinleyicisi kayıtlı değilse
+         kaydırmayı kendisi başlatır ve pointer olaylarını iptal eder. Sayfanın sürükleme kodları dinleyiciyi uzun basmadan SONRA ekliyor.
+         Baştan kayıtlı bu dinleyici yalnız sürükleme etkinken (menüde overflowY=hidden, kart/şeritte .lift) kaydırmayı engeller. */
+  (function(){var D=$('drawer');
+    document.addEventListener('touchmove',function(ev){try{if(!ev.cancelable)return;
+      if((D&&D.style.overflowY==='hidden')||document.querySelector('.lift'))ev.preventDefault()}catch(e){}},{passive:false});
+  })();
   amiriAra();
   try{serit()}catch(e){}
 })();

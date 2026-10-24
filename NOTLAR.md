@@ -25,6 +25,11 @@ Paket: `tr.cafer.aimerkezi` (Capacitor/WebView). Tüm arayüz `assets/public/ind
 - Kullanıcının 11:21'de gönderdiği "bulut simgesi duruyor" görüntüleri eski uygulamadan (menüde "APK 1.6" ve Kur'an girişi görünüyor). Yeni uygulama "Cafer AI Yeni" adıyla ayrı kurulu; iki uygulamanın simgesi aynı.
 - Menü sürüm yazısı `APK 1.6.3`, versionCode 4. 1.6.2 APK'ları `apk-indir\Eski`'de.
 
+## 1.6.4 (24.10.2026, kullanıcı geri bildirimi: "on numara", üç düzeltme)
+14. Menü başlığındaki sürüm satırı büyümüştü: tema kuralı `.dh div` iç içe div'i de yakalıyordu → `.dh > div` (başlık 19 px) ve `.dh > div > div` (sürüm 13 px, soluk).
+15. Yedekle / Geri yükle: orijinal "Drive'a yedekle" `window.claude.use('mcp')` ile claude.ai'nin Drive bağlantısını kullanıyordu; APK'da yok → "Drive bağlı değil". Yeni `openBackup`: yedek = tüm localStorage (notlar, hızlı not, favoriler, sıralamalar, ayarlar, Kur'an işaretleri) JSON dosyası; telefonda Capacitor `Filesystem.writeFile` (CACHE) + `Share.share` (paylaşım menüsünden Drive'a); tarayıcıda indirme. Geri yükle: dosya seçici → onay → localStorage'a yaz → sayfa yenilenir. Dosya adı `cafer-ai-yedek-YYYYAAGG-SSDD.json`. Kur'an sayfasındaki ayrı Drive yedeği de claude.ai'ye bağlı (sayfa gizli, localStorage yedeğine dahil).
+16. Menüde sürükleme çalışmıyordu: Chrome/WebView, dokunma başladığında `passive:false` bir `touchmove` dinleyicisi yoksa kaydırmayı tarayıcıda başlatıp pointer olaylarını iptal ediyor; sayfanın menü ve `sortable()` kodları dinleyiciyi uzun basmadan sonra ekliyor. Çözüm: baştan kayıtlı tek dinleyici, yalnız sürükleme etkinken (`#drawer` overflowY=hidden ya da `.lift` varken) kaydırmayı engeller. Kartlar ve şeritler de kapsanır. Kullanım: öğeye yaklaşık yarım saniye basılı tut, kabarınca sürükle. Telefonda denenmedi.
+
 ## Dosyalar
 - `cafer-ai-merkezi-1.6.0.apk`: özgün, Android Debug imzalı (telefondaki).
 - `cafer-ai-merkezi-1.6.1.apk`: aynı paket adı; telefondaki üstüne kurulmaz (imza farklı), önce eskisi silinmeli.
