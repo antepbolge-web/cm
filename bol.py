@@ -98,6 +98,39 @@ def mektubat2(v):
         v = v.replace(eski, yeni)
     return v
 
+AKCICEK = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'akcicek', 'cilt2-3.json')
+
+def mektubat_akcicek(v):
+    """2. ve 3. cilt: Abdülkadir Akçiçek tercümesi (26.10.2026 kullanıcı sadakat.net bağlantısını verdi; akcicek_cikar.py).
+    Yapay zekâ deneme çevirisinin (mektubat2) yerine geçer. Kişisel kullanım; metin herkese açık depoya girmez."""
+    import gzip
+    ek = json.load(open(AKCICEK, encoding='utf-8'))
+    c2 = sum(1 for k in ek if k.startswith('2:'))
+    c3 = sum(1 for k in ek if k.startswith('3:'))
+    assert c2 == 99, ('2. cilt 99 mektup olmalı', c2)
+    a = v.index(b'<script type="text/plain" id="TOHUM">') + len(b'<script type="text/plain" id="TOHUM">')
+    e = v.index(b'</script>', a)
+    tohum = json.loads(gzip.decompress(base64.b64decode(v[a:e].strip())))
+    assert not any(k[0] in '23' for k in tohum), 'TOHUM zaten 2-3. cilt içeriyor'
+    tohum.update(ek)
+    yeni = base64.b64encode(gzip.compress(json.dumps(tohum, ensure_ascii=False, separators=(',', ':')).encode('utf-8'), 9, mtime=0))
+    v = v[:a] + yeni + v[e:]
+    yama = [
+        (b"function kaynakAl(k){var e=S.m[k];return (e&&e.kaynak)||(TOHUM[k]?KAYNAK:'')}",
+         ("var KAYNAK2='Mektubat-ı Rabbani Tam Metin Tercümesi — Abdülkadir Akçiçek, Çile Yayınları 1979 (metin: sadakat.net)';"
+          "function kaynakAl(k){var e=S.m[k];return (e&&e.kaynak)||(TOHUM[k]?(k.charAt(0)==='1'?KAYNAK:KAYNAK2):'')}").encode()),
+        (b"e.kaynak=(TOHUM[cur]&&kv===KAYNAK)?'':kv;", b"e.kaynak=(TOHUM[cur]&&(kv===KAYNAK||kv===KAYNAK2))?'':kv;"),
+        (b"var VOL=[313,99,114];", ("var VOL=[313,99,%d];" % c3).encode()),
+        ('2. ve 3. cild metinlerini kendiniz ekleyebilirsiniz.'.encode(),
+         ('2. cildin %d ve 3. cildin %d mektubu: Abdülkadir Akçiçek, <i>Mektubat-ı Rabbani Tam Metin Tercümesi</i>, Çile Yayınları (1979), '
+          'sadakat.net sayfalarından alınmıştır. Tercüme farklı olduğu için 1. cilt ile dil farkı vardır. Bu metin kişisel okuma içindir, başkasıyla paylaşmayın.' % (c2, c3)).encode()),
+        ('Metinli (1. Cild)</title>'.encode(), 'Metinli (3 Cild)</title>'.encode()),
+    ]
+    for eski, yeni in yama:
+        assert v.count(eski) == 1, ('akçiçek yaması tutmadı', eski[:50])
+        v = v.replace(eski, yeni)
+    return v
+
 def mektubat_arama(v):
     """Mektubat gelişmiş arama (26.10.2026 kullanıcı: 'gelişmiş arama olsun'; 24.10'da 'numara/kelime/konu/muhatap süzme çok önemli').
     Kelimeler sırasız aranır, "tırnak" tam ifade; süzgeç: cilt, nerede, durum, numara aralığı; konu çipleri;
@@ -106,7 +139,7 @@ def mektubat_arama(v):
            b'.suz label{display:flex;align-items:center;gap:6px;font-weight:600;font-size:17px}'
            b'.suz select,.suz input{min-height:44px;border-radius:12px;border:2px solid var(--line);background:var(--card);color:var(--tx);padding:0 8px;font-size:17px}'
            b'.suz input{width:80px}#sKonu:empty{display:none}#sBilgi{flex-basis:100%}'
-           b'#suzD{flex-basis:100%}#suzD summary{min-height:44px;display:flex;align-items:center;gap:6px;font-weight:700;font-size:17px;cursor:pointer;color:var(--acc)}'
+           b'#suzD{flex-basis:100%}#suzD summary{min-height:44px;display:flex;align-items:center;gap:6px;font-weight:700;font-size:17px;cursor:pointer;color:var(--tx)}'
            b'.suzIc{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;padding:6px 0 4px}.lk span.parca{-webkit-line-clamp:3}'
            b'mark.bul{background:#fde68a;color:#111;border-radius:3px;padding:0 1px}</style>')
     html = ('<div class="suz" id="suz" hidden><details id="suzD"><summary id="suzOzet">Süzgeç</summary><div class="suzIc">'
@@ -220,7 +253,7 @@ for s in SAYFA:
         if s['id'] == 'vakit':
             veri = fazilet(veri)
         if s['id'] == 'mektubat':
-            veri = mektubat_arama(mektubat2(veri))
+            veri = mektubat_arama(mektubat_akcicek(veri) if os.path.exists(AKCICEK) else mektubat2(veri))
         if s['id'] == 'notlar':   # "Yedek yükle" görünsün: eski not yedekleri (Artline dönüşümü dahil) silmeden birleştirilir
             eski = b'#yedekAl,#yedekYukle,#yedekDurum{display:none!important}'
             assert veri.count(eski) == 1, 'notlar yaması tutmadı'
