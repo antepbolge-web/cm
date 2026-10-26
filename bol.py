@@ -98,6 +98,110 @@ def mektubat2(v):
         v = v.replace(eski, yeni)
     return v
 
+def mektubat_arama(v):
+    """Mektubat gelişmiş arama (26.10.2026 kullanıcı: 'gelişmiş arama olsun'; 24.10'da 'numara/kelime/konu/muhatap süzme çok önemli').
+    Kelimeler sırasız aranır, "tırnak" tam ifade; süzgeç: cilt, nerede, durum, numara aralığı; konu çipleri;
+    sonuçta ve açılan mektupta eşleşme işaretlenir, ilk eşleşmeye kaydırılır."""
+    css = (b'<style id="gelismis-arama">.suz{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin-bottom:12px}.suz[hidden]{display:none}'
+           b'.suz label{display:flex;align-items:center;gap:6px;font-weight:600;font-size:17px}'
+           b'.suz select,.suz input{min-height:44px;border-radius:12px;border:2px solid var(--line);background:var(--card);color:var(--tx);padding:0 8px;font-size:17px}'
+           b'.suz input{width:80px}#sKonu:empty{display:none}#sBilgi{flex-basis:100%}'
+           b'#suzD{flex-basis:100%}#suzD summary{min-height:44px;display:flex;align-items:center;gap:6px;font-weight:700;font-size:17px;cursor:pointer;color:var(--acc)}'
+           b'.suzIc{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;padding:6px 0 4px}.lk span.parca{-webkit-line-clamp:3}'
+           b'mark.bul{background:#fde68a;color:#111;border-radius:3px;padding:0 1px}</style>')
+    html = ('<div class="suz" id="suz" hidden><details id="suzD"><summary id="suzOzet">Süzgeç</summary><div class="suzIc">'
+            '<label>Cilt <select id="sCilt"><option value="0">Hepsi</option><option value="1">1. Cilt</option><option value="2">2. Cilt</option><option value="3">3. Cilt</option></select></label>'
+            '<label>Nerede <select id="sYer"><option value="hepsi">Her yerde</option><option value="metin">Mektup metni</option><option value="muhatap">Muhatap</option><option value="konu">Konularım</option><option value="not">Notlarım</option></select></label>'
+            '<label>Durum <select id="sDurum"><option value="hepsi">Hepsi</option><option value="okunmamis">Okunmamış</option><option value="okunmus">Okunmuş</option><option value="fav">Favori</option><option value="notlu">Notlu</option></select></label>'
+            '<label>No <input id="sBas" type="number" min="1" inputmode="numeric" placeholder="ilk" aria-label="İlk numara"> – <input id="sSon" type="number" min="1" inputmode="numeric" placeholder="son" aria-label="Son numara"></label>'
+            '<button class="btn sm" id="sSifirla" type="button">Süzgeci sıfırla</button></div></details>'
+            '<div class="chips" id="sKonu"></div><div class="durum" id="sBilgi"></div></div>').encode()
+    js = r"""/* ---- Gelişmiş arama (bolme/bol.py mektubat_arama) ---- */
+var SZ=LSget('cafer_mektubat_suz',{c:'0',yer:'hepsi',d:'hepsi'}),VURGU=null,GOSTER=100,araTmr=0;
+var ES=[['namaz','nemaz'],['zikir','zikr'],['fikir','fikr'],['sabir','sabr'],['sukur','sukr'],['kabir','kabr'],['nefis','nefs']];   // baskının yazımı: nemâz, zikr…
+function cesit(t){var r=[t];ES.forEach(function(e){[0,1].forEach(function(i){if(t.indexOf(e[i])>=0){var y=t.split(e[i]).join(e[1-i]);if(r.indexOf(y)<0)r.push(y)}})});return r}
+function terimler(ham){var q=norm(ham).trim(),m=q.match(/^["“”](.+)["“”]$/);return (m?[m[1].trim()]:q.split(/\s+/).filter(Boolean)).map(cesit)}
+function duz(ts){return [].concat.apply([],ts)}
+function alanMetni(k,yer){var e=S.m[k]||{};
+  if(yer==='metin')return tnorm(k);
+  if(yer==='muhatap')return norm(e.muhatap||'')+' '+tnorm(k).slice(0,700);
+  if(yer==='not')return norm(e.not||'');
+  if(yer==='konu')return norm((e.konu||[]).join(' '));
+  return tnorm(k)+' '+norm([e.not,e.muhatap,kaynakAl(k),(e.konu||[]).join(' ')].join(' '))}
+function haritali(s){var n='',m=[];for(var i=0;i<s.length;i++){var c=norm(s.charAt(i));for(var j=0;j<c.length;j++){n+=c.charAt(j);m.push(i)}}m.push(s.length);return {n:n,m:m}}
+function isaretle(kutu,metin,ts){
+  var h=haritali(metin),ar=[];
+  ts.forEach(function(t){if(!t)return;var i=h.n.indexOf(t);while(i>=0){ar.push([h.m[i],h.m[i+t.length]]);i=h.n.indexOf(t,i+t.length)}});
+  ar.sort(function(a,b){return a[0]-b[0]});var p=0,say=0;
+  ar.forEach(function(r){if(r[0]<p)return;if(r[0]>p)kutu.appendChild(document.createTextNode(metin.slice(p,r[0])));var mk=el('mark','bul',metin.slice(r[0],r[1]));kutu.appendChild(mk);p=r[1];say++});
+  if(p<metin.length)kutu.appendChild(document.createTextNode(metin.slice(p)));return say}
+function parca(k,ts){var e=S.m[k]||{},m=metinAl(k);
+  if(SZ.yer==='not'&&e.not)m=e.not;else if(SZ.yer==='konu')return 'Konular: '+(e.konu||[]).join(', ');
+  m=m.replace(/\s+/g,' ');var n=norm(m),i=-1;
+  duz(ts).forEach(function(t){var j=n.indexOf(t);if(j>=0&&(i<0||j<i))i=j});
+  if(i<0)return m.slice(0,160);var a=Math.max(0,i-25);a=Math.max(0,m.lastIndexOf(' ',a)+1);return (a?'… ':'')+m.slice(a,a+220)+' …'}
+function suzgecDurum(){$('sCilt').value=SZ.c;$('sYer').value=SZ.yer;$('sDurum').value=SZ.d;$('sBas').value=SZ.bas||'';$('sSon').value=SZ.son||'';
+  var on=[];if(SZ.c!=='0')on.push(SZ.c+'. Cilt');if(SZ.yer!=='hepsi')on.push($('sYer').selectedOptions[0].textContent);if(SZ.d!=='hepsi')on.push($('sDurum').selectedOptions[0].textContent);if(SZ.bas||SZ.son)on.push('No '+(SZ.bas||'1')+'–'+(SZ.son||'son'));
+  $('suzOzet').textContent='⚙ Süzgeç'+(on.length?': '+on.join(' · '):' (hepsi)');
+  var tum={};Object.keys(S.m).forEach(function(k){(S.m[k].konu||[]).forEach(function(t){tum[t]=(tum[t]||0)+1})});
+  var b=$('sKonu');b.textContent='';var ks=Object.keys(tum).sort();if(ks.length)b.appendChild(el('span','mut','Konularım:'));
+  ks.forEach(function(t){var c=el('button','tag',t+' ('+tum[t]+')');c.type='button';c.onclick=function(){SZ.yer='konu';LSset('cafer_mektubat_suz',SZ);$('ara').value=t;GOSTER=100;notListe()};b.appendChild(c)})}
+function notListe(){
+  var ham=$('ara').value,q=norm(ham).trim(),box=$('nList'),bas=$('p-notlar').querySelector('h2');
+  $('suz').hidden=!q;
+  if(q){
+    var m=q.match(/^(\d)\s*[:.\/]\s*(\d{1,3})$/);
+    if(m&&+m[1]>=1&&+m[1]<=3&&+m[2]>=1&&+m[2]<=VOL[+m[1]-1]){var kk=key(+m[1],+m[2]);sekme('mektup');ac(kk);return}
+    bas.textContent='Arama sonuçları';suzgecDurum();
+    var ts=terimler(ham),nb=+SZ.bas||0,ns=+SZ.son||0;
+    var tum={};Object.keys(S.m).forEach(function(k){tum[k]=1});Object.keys(TOHUM).forEach(function(k){tum[k]=1});
+    var ks=Object.keys(tum).filter(function(k){
+      var p=k.split(':'),c=+p[0],n=+p[1],e=S.m[k]||{};
+      if(SZ.c!=='0'&&String(c)!==SZ.c)return false;if(nb&&n<nb)return false;if(ns&&n>ns)return false;
+      if(SZ.d==='okunmamis'&&e.okundu)return false;if(SZ.d==='okunmus'&&!e.okundu)return false;if(SZ.d==='fav'&&!e.fav)return false;if(SZ.d==='notlu'&&!e.not)return false;
+      var a=alanMetni(k,SZ.yer);return ts.every(function(c){return c.some(function(t){return a.indexOf(t)>=0})})}).sort(sirala);
+    box.textContent='';
+    var ust=ks.length+' mektup bulundu'+(ts.length>1&&!/^["“”]/.test(ham.trim())?' · kelimelerin hepsi geçenler (tam ifade: "tırnak")':'');
+    $('sBilgi').textContent=ust;
+    if(!ks.length){box.appendChild(el('p','mut','Sonuç bulunamadı. Süzgeci sıfırlamayı ya da daha az kelime yazmayı deneyin.'));return}
+    ks.slice(0,GOSTER).forEach(function(k){var e=S.m[k]||{},b=el('button','lk');b.type='button';
+      b.appendChild(el('b','',(e.fav?'★ ':'')+(e.okundu?'✓ ':'')+ad(k)+(e.muhatap?' · '+e.muhatap:'')));
+      var s=el('span','parca');isaretle(s,parca(k,ts),duz(ts));b.appendChild(s);
+      b.onclick=function(){VURGU={k:k,ts:duz(ts)};sekme('mektup');ac(k)};box.appendChild(b)});
+    if(ks.length>GOSTER){var d=el('button','btn sm',(ks.length-GOSTER)+' sonuç daha · göster');d.type='button';d.onclick=function(){GOSTER+=100;notListe()};box.appendChild(d)}
+    return;
+  }
+  bas.textContent='Notlarım';
+  var ks2=Object.keys(S.m).filter(function(k){return S.m[k].not}).sort(sirala);
+  liste(box,ks2,'Henüz not yok. Bir mektubu açıp "Notlarım" kutusuna yazın.');
+}
+[['sCilt','c'],['sYer','yer'],['sDurum','d'],['sBas','bas'],['sSon','son']].forEach(function(x){var g=$(x[0]);g.addEventListener(g.tagName==='SELECT'?'change':'input',function(){SZ[x[1]]=this.value;LSset('cafer_mektubat_suz',SZ);GOSTER=100;notListe()})});
+$('sSifirla').onclick=function(){SZ={c:'0',yer:'hepsi',d:'hepsi'};LSset('cafer_mektubat_suz',SZ);GOSTER=100;notListe()};
+function vurguUygula(box){
+  if(!VURGU||VURGU.k!==cur)return;var ilk=null;
+  box.querySelectorAll('p').forEach(function(p){var t=p.textContent,n=norm(t);if(!VURGU.ts.some(function(x){return n.indexOf(x)>=0}))return;p.textContent='';isaretle(p,t,VURGU.ts);if(!ilk)ilk=p.querySelector('mark.bul')});
+  if(ilk)setTimeout(function(){ilk.scrollIntoView({block:'center'})},260)}
+"""
+    yama = [
+        (b'<div class="liste" id="nList">', html + b'<div class="liste" id="nList">'),
+        ('placeholder="Metin, not, muhatap, 1:45…"'.encode(), 'placeholder="Ara: kelime, &quot;tam ifade&quot;, 1:45…"'.encode()),
+        (b"    box.appendChild(p);\n  });\n}\nfunction mod(", b"    box.appendChild(p);\n  });\n  vurguUygula(box);\n}\nfunction mod("),
+        (b"$('ara').addEventListener('input',function(){if(this.value.trim()){",
+         b"$('ara').addEventListener('input',function(){GOSTER=100;var me=this;clearTimeout(araTmr);araTmr=setTimeout(function(){araCalis.call(me)},180)});\nfunction araCalis(){if(this.value.trim()){"),
+    ]
+    for eski, yeni in yama:
+        assert v.count(eski) == 1, ('arama yaması tutmadı', eski[:50])
+        v = v.replace(eski, yeni)
+    # eski notListe'nin yerine yenisi; arama satırının sonu: 'else sekme(A.tab)});' → işlev kapanışı
+    a = v.index(b'function notListe(){')
+    e = v.index(b"$('ara').addEventListener('input'", a)
+    v = v[:a] + js.encode() + v[e:]
+    eski = b"notListe()}else sekme(A.tab)});"
+    assert v.count(eski) == 1, 'arama satırı sonu bulunamadı'
+    v = v.replace(eski, b"notListe()}else sekme(A.tab)}")
+    i = v.index(b'</head>')
+    return v[:i] + css + v[i:]
+
 # 1. Sekme listesi: yalnız seçilenler (+ arama)
 a = t.index('var SAYFA=') + len('var SAYFA=')
 e = t.index(',AD=SAYFA', a)
@@ -116,7 +220,7 @@ for s in SAYFA:
         if s['id'] == 'vakit':
             veri = fazilet(veri)
         if s['id'] == 'mektubat':
-            veri = mektubat2(veri)
+            veri = mektubat_arama(mektubat2(veri))
         if s['id'] == 'notlar':   # "Yedek yükle" görünsün: eski not yedekleri (Artline dönüşümü dahil) silmeden birleştirilir
             eski = b'#yedekAl,#yedekYukle,#yedekDurum{display:none!important}'
             assert veri.count(eski) == 1, 'notlar yaması tutmadı'
@@ -150,6 +254,26 @@ if len(ids) == 1:
 # Tek Kur'an yönlendirmesi yalnız Vakit sekmesi varken (yoksa Merkez kendi Kur'an'ını açar)
 if 'vakit' not in ids:
     degistir("if(f===fr.merkez&&typeof w.openApp==='function'", "if(false&&f===fr.merkez&&typeof w.openApp==='function'")
+
+# 5. Güncelleme uyarısı (26.10.2026 kullanıcı: 'açılışta yeni sürüm var'): 6. bağımsız değişken "paket:versionCode:versionName".
+# Yalnız APK'da (Capacitor; kabuğun yerli() işlevi kapalı kapsamda, buradan görünmez) GitHub'daki surum.json okunur; orada daha büyük code varsa üstte şerit çıkar, "İndir" bağlantıyı tarayıcıda açar.
+if len(sys.argv) > 6:
+    pk, kod, sr = sys.argv[6].split(':')
+    js = ("<script id=\"guncelle\">(function(){var P='%s',K=%d,S='%s';window.UYG_SURUM=S;"
+          "try{if(!(window.Capacitor&&Capacitor.isNativePlatform&&Capacitor.isNativePlatform()))return}catch(e){return}"
+          "fetch('https://raw.githubusercontent.com/antepbolge-web/cm/main/surum.json?t='+Date.now(),{cache:'no-store'})"
+          ".then(function(r){return r.ok?r.json():null}).then(function(j){var s=j&&j[P];if(!s||!(s.code>K)||!s.link)return;"
+          "var d=document.createElement('div');d.id='yeniSurum';d.setAttribute('role','status');"
+          "d.style.cssText='position:fixed;left:8px;right:8px;top:calc(env(safe-area-inset-top,0px) + 8px);z-index:99999;display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:14px;background:#0f766e;color:#fff;font:600 16px/1.3 system-ui,Roboto,Arial,sans-serif;box-shadow:0 4px 16px rgba(0,0,0,.3)';"
+          "var y=document.createElement('span');y.style.flex='1';y.textContent='Yeni s\\u00fcr\\u00fcm var: '+s.surum+' (sizdeki '+S+')';d.appendChild(y);"
+          "var a=document.createElement('button');a.type='button';a.textContent='\\u0130ndir';"
+          "a.style.cssText='min-height:44px;padding:0 16px;border:0;border-radius:10px;background:#d4a017;color:#111;font:700 16px system-ui,Roboto,Arial,sans-serif';"
+          "a.onclick=function(){location.href=s.link};d.appendChild(a);"
+          "var k=document.createElement('button');k.type='button';k.textContent='\\u2715';k.setAttribute('aria-label','Kapat');"
+          "k.style.cssText='min-width:44px;min-height:44px;border:0;border-radius:10px;background:transparent;color:#fff;font:700 18px system-ui';"
+          "k.onclick=function(){d.remove()};d.appendChild(k);document.body.appendChild(d)})['catch'](function(){})"
+          "})();</script>\n" % (pk, int(kod), sr))
+    degistir('</body></html>', js + '</body></html>')
 
 open(cikti, 'wb').write(t.encode('utf-8'))
 print(cikti, len(t.encode('utf-8')), 'bayt;', [s['tel'] for s in yeni], '| arama:', [k[1] for k in kay])
