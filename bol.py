@@ -235,6 +235,26 @@ function vurguUygula(box){
     i = v.index(b'</head>')
     return v[:i] + css + v[i:]
 
+def depo_telefon(v):
+    """Depo telefonda (26.10.2026 kullanıcı: 'klasör seçilmiyor'): Android WebView'de showDirectoryPicker yok,
+    webkitdirectory'li dosya kutusu da açılmıyor. APK'da dosya kutusu çoklu dosya seçiciye döner ('Dosyaları seç');
+    tarama/yinelenen/boyut çalışır, silme yapılamaz (yazma izni yok) → Dosya Yöneticisi'ne yönlendirilir. Bilgisayar değişmez."""
+    yama = [
+        (b'var $=function(s){return document.querySelector(s)};',
+         b'var $=function(s){return document.querySelector(s)};'
+         b'var TEL=false;try{TEL=!!(window.Capacitor&&Capacitor.isNativePlatform&&Capacitor.isNativePlatform())}catch(e){}'),
+        (b'async function doDelete(){',
+         'async function doDelete(){if(TEL&&!rootHandle){dmsg("Telefonda bu sayfa dosya silemez (Android izin vermiyor). Seçilen dosyaları Dosya Yöneticisi uygulamasıyla silin.");return}'.encode()),
+        (b'var TMP=["tmp"',
+         ('if(TEL){$("#fallback").removeAttribute("webkitdirectory");$("#pick").textContent="Dosyaları seç";'
+          '$("#status").textContent="Telefonda klasör seçilemiyor. Açılan pencerede klasöre girin, ⋮ menüsünden Tümünü seç deyin ve Seç\'e basın. Silmek için Dosya Yöneticisi uygulamasını kullanın."}\n'
+          'var TMP=["tmp"').encode()),
+    ]
+    for eski, yeni in yama:
+        assert v.count(eski) == 1, ('depo yaması tutmadı', eski[:40])
+        v = v.replace(eski, yeni)
+    return v
+
 # 1. Sekme listesi: yalnız seçilenler (+ arama)
 a = t.index('var SAYFA=') + len('var SAYFA=')
 e = t.index(',AD=SAYFA', a)
@@ -252,6 +272,8 @@ for s in SAYFA:
         veri = open(os.path.join(kdir, 'parca_' + s['id'] + '.html'), 'rb').read()
         if s['id'] == 'vakit':
             veri = fazilet(veri)
+        if s['id'] == 'depo':
+            veri = depo_telefon(veri)
         if s['id'] == 'mektubat':
             veri = mektubat_arama(mektubat_akcicek(veri) if os.path.exists(AKCICEK) else mektubat2(veri))
         if s['id'] == 'notlar':   # "Yedek yükle" görünsün: eski not yedekleri (Artline dönüşümü dahil) silmeden birleştirilir
