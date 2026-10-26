@@ -1,0 +1,8 @@
+# Kaynak kitap metinleri herkese açık depoya girmez (Drive'da yedekli)
+k_exe/
+mektubat2/
+__pycache__/
+*.apk
+*.jks
+*.pass
+local.properties
