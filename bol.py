@@ -306,6 +306,9 @@ degistir("// açılışta her zaman Cafer AI Merkezi", "// açılışta ilk sekm
 # Tek sekmeli uygulamada alt çubuğun işlevi yok: gizle, telefonun alt sistem çubuğu payı korunsun
 if len(ids) == 1:
     degistir('</style></head><body>', 'nav{display:none!important}body{padding-bottom:var(--alt-bosluk)}\n</style></head><body>')
+# Çok sekmeli uygulamada alt çubuk ince: simge yazının yanında, 64 px yerine 44 px (27.10.2026 kullanıcı: 'alt sekme çubuğunu daralt')
+else:
+    degistir('</style></head><body>', 'nav{padding:2px 4px calc(2px + var(--alt-bosluk))}nav button{flex-direction:row;gap:6px;min-height:44px;padding:0 2px;border-radius:10px;font-size:15px}nav button .si{font-size:20px;line-height:1}\n</style></head><body>')
 # Tek Kur'an yönlendirmesi yalnız Vakit sekmesi varken (yoksa Merkez kendi Kur'an'ını açar)
 if 'vakit' not in ids:
     degistir("if(f===fr.merkez&&typeof w.openApp==='function'", "if(false&&f===fr.merkez&&typeof w.openApp==='function'")
