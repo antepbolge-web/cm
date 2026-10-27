@@ -12,6 +12,14 @@ sed -i "s|>Cafer Hepsi</string>|>$AD</string>|g; s|>tr.cafer.hepsi</string>|>$PK
 sed -i "s/versionCode: [0-9]*/versionCode: $VC/; s/versionName: .*/versionName: $VN/" "$D/apktool.yml"
 [ "$(grep -o 'tr\.cafer\.hepsi[A-Za-z.]*' "$D/AndroidManifest.xml" | sort -u)" = "tr.cafer.hepsi.MainActivity" ] || { echo "HATA: manifestte eski paket adı kaldı"; exit 1; }
 grep -q "Cafer Hepsi\|>tr.cafer.hepsi<" "$D/res/values/strings.xml" && { echo "HATA: strings.xml"; exit 1; }
+# Konum izni yalnız Vakit'te gerekir ("Konumumu bul"); öbür uygulamalarda konum çağrısı yok (27.10.2026)
+if [ "$4" != "vakitmektup" ]; then
+  sed -i '/android\.permission\.ACCESS_\(FINE\|COARSE\)_LOCATION/d' "$D/AndroidManifest.xml"
+  grep -q "_LOCATION" "$D/AndroidManifest.xml" && { echo "HATA: konum izni kaldı"; exit 1; }
+fi
+# Capacitor ayarında Hepsi'nin adı kalmasın
+sed -i "s/\"appId\": \"tr\.cafer\.hepsi\"/\"appId\": \"$PK\"/; s/\"appName\": \"Cafer Hepsi\"/\"appName\": \"$AD\"/" "$D/assets/capacitor.config.json"
+grep -q "tr\.cafer\.hepsi\|Cafer Hepsi" "$D/assets/capacitor.config.json" && { echo "HATA: capacitor.config.json"; exit 1; }
 cp "$HTML" "$D/assets/public/index.html"
 python -I "$BURA/simge.py" "$H/res" "$D/res" "$TEMA"
 bash /c/Users/User/.claude/skills/cafer-apk-ozellestirme/betikler/derle.sh "$W" "$D" "$N"
