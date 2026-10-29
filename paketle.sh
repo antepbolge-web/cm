@@ -17,6 +17,9 @@ if [ "$4" != "vakitmektup" ]; then
   sed -i '/android\.permission\.ACCESS_\(FINE\|COARSE\)_LOCATION/d' "$D/AndroidManifest.xml"
   grep -q "_LOCATION" "$D/AndroidManifest.xml" && { echo "HATA: konum izni kaldı"; exit 1; }
 fi
+# Hata ayıklama kapalı: Hepsi debug derlenir, bölünen APK'lar yayın gibi olmalı (denetim 29.10.2026)
+sed -i 's/ android:debuggable="true"//' "$D/AndroidManifest.xml"
+grep -q 'android:debuggable="true"' "$D/AndroidManifest.xml" && { echo "HATA: debuggable kaldı"; exit 1; }
 # Capacitor ayarında Hepsi'nin adı kalmasın
 sed -i "s/\"appId\": \"tr\.cafer\.hepsi\"/\"appId\": \"$PK\"/; s/\"appName\": \"Cafer Hepsi\"/\"appName\": \"$AD\"/" "$D/assets/capacitor.config.json"
 grep -q "tr\.cafer\.hepsi\|Cafer Hepsi" "$D/assets/capacitor.config.json" && { echo "HATA: capacitor.config.json"; exit 1; }
