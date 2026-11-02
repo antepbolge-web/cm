@@ -1,6 +1,6 @@
 {
   "_aciklama": "Uygulamalar açılışta bu dosyayı okur; code kendi sürümünden büyükse 'Yeni sürüm var' şeridi çıkar, İndir Drive apk-indir klasörünü açar. Yeni APK Drive'a konunca code ve surum güncellenir.",
-  "vakitmektup": {"code": 11, "surum": "1.0.10", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu"},
+  "vakitmektup": {"code": 12, "surum": "1.0.11", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu"},
   "notlarceviri": {"code": 9, "surum": "1.0.8", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu"},
   "merkez": {"code": 5, "surum": "1.0.4", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu"},
   "fotograf": {"code": 9, "surum": "2.0.3-telefon.9", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu"},
