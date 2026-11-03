@@ -362,20 +362,13 @@ if 'vakit' not in ids:
 # Yalnız APK'da (Capacitor; kabuğun yerli() işlevi kapalı kapsamda, buradan görünmez) GitHub'daki surum.json okunur; orada daha büyük code varsa üstte şerit çıkar, "İndir" bağlantıyı tarayıcıda açar.
 if len(sys.argv) > 6:
     pk, kod, sr = sys.argv[6].split(':')
-    js = ("<script id=\"guncelle\">(function(){var P='%s',K=%d,S='%s';window.UYG_SURUM=S;"
+    # 03.11.2026: ailenin ortak yüzen şeridi. cafer-surum.js (skill telefon-apk-webview scripts) bu klasörde, sayfaya gömülür.
+    # P/K/S satırı aynı biçimde kalır: apk-yama iş akışı K ve S'yi surum.env'den yazar.
+    ortak = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'cafer-surum.js'), encoding='utf-8').read().replace('\r\n', '\n').strip()
+    js = ('<script id="guncelle">' + ortak + '\n' +
+          "(function(){var P='%s',K=%d,S='%s';window.UYG_SURUM=S;" % (pk, int(kod), sr) +
           "try{if(!(window.Capacitor&&Capacitor.isNativePlatform&&Capacitor.isNativePlatform()))return}catch(e){return}"
-          "fetch('https://raw.githubusercontent.com/antepbolge-web/cm/main/surum.json?t='+Date.now(),{cache:'no-store'})"
-          ".then(function(r){return r.ok?r.json():null}).then(function(j){var s=j&&j[P];if(!s||!(s.code>K)||!s.link)return;"
-          "var d=document.createElement('div');d.id='yeniSurum';d.setAttribute('role','status');"
-          "d.style.cssText='position:fixed;left:8px;right:8px;top:calc(env(safe-area-inset-top,0px) + 8px);z-index:99999;display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:14px;background:#0f766e;color:#fff;font:600 16px/1.3 system-ui,Roboto,Arial,sans-serif;box-shadow:0 4px 16px rgba(0,0,0,.3)';"
-          "var y=document.createElement('span');y.style.flex='1';y.textContent='Yeni s\\u00fcr\\u00fcm var: '+s.surum+' (sizdeki '+S+')';d.appendChild(y);"
-          "var a=document.createElement('button');a.type='button';a.textContent='\\u0130ndir';"
-          "a.style.cssText='min-height:44px;padding:0 16px;border:0;border-radius:10px;background:#d4a017;color:#111;font:700 16px system-ui,Roboto,Arial,sans-serif';"
-          "a.onclick=function(){location.href=s.link};d.appendChild(a);"
-          "var k=document.createElement('button');k.type='button';k.textContent='\\u2715';k.setAttribute('aria-label','Kapat');"
-          "k.style.cssText='min-width:44px;min-height:44px;border:0;border-radius:10px;background:transparent;color:#fff;font:700 18px system-ui';"
-          "k.onclick=function(){d.remove()};d.appendChild(k);document.body.appendChild(d)})['catch'](function(){})"
-          "})();</script>\n" % (pk, int(kod), sr))
+          "CaferSurum.denetle({anahtar:P,kod:K,surum:S,ac:function(l){location.href=l}})})();</script>\n")
     degistir('</body></html>', js + '</body></html>')
 
 open(cikti, 'wb').write(t.encode('utf-8'))
