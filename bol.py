@@ -53,6 +53,49 @@ def notlar_telefon(v):
     i = v.index(b'</style></head><body>')   # ilk </head>; ikincisi Word dışa aktarma şablonunun içinde
     return v[:i + 8] + css + v[i + 8:]
 
+# Notlar ve Çeviri 1.1.0 (02.11.2026, evde apk-yama dalıyla yapıldı; 03.11 buraya işlendi ki yeniden üretimde kaybolmasın).
+# Anahtarsız Claude: istek panoya + claude.ai/new?q= (12 000 karakteri aşan adres yerine /new, kullanıcı yapıştırır).
+# Kaynak: skill cafer-apk-ozellestirme betikler/nc-claude.js — iki dosya aynı çıktıyı vermeli.
+# Kural: eklenen JS'te tek tırnaklı metin içinde kesme işareti (') yok.
+CLAUDE_GIT = """function claudeGit(istek){var u='https://claude.ai/new?q='+encodeURIComponent(istek),uzun=u.length>12000;
+function kopya(){try{if(navigator.clipboard&&navigator.clipboard.writeText)return navigator.clipboard.writeText(istek)}catch(e){}
+var a=document.createElement('textarea');a.value=istek;document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}a.remove();return Promise.resolve()}
+Promise.resolve(kopya()).catch(function(){}).then(function(){window.open(uzun?'https://claude.ai/new':u,'_blank');
+toast(uzun?'Metin uzun: claude.ai açılınca yapıştırın':'claude.ai açılıyor; metin panoya da kopyalandı')})}
+"""
+
+def tek(v, eski, yeni, ne):
+    eski, yeni = eski.encode(), yeni.encode()
+    assert v.count(eski) == 1, (ne + ' yaması tutmadı', eski[:50])
+    return v.replace(eski, yeni)
+
+def notlar_claude(v):
+    """Not düzenleyicide '✦ Claude ▾': Düzelt, Özetle / maddele, Sadeleştir, Resmî yazıya çevir."""
+    v = tek(v, '<button class="btn sm" id="nKilit"',
+            '<details id="cla"><summary class="btn sm" style="display:inline-flex;align-items:center">✦ Claude ▾</summary>'
+            '<div style="position:absolute;z-index:8;background:var(--card);border:2px solid var(--gold);border-radius:12px;padding:8px;display:flex;flex-direction:column;gap:6px;margin-top:4px;max-width:260px">'
+            '<button class="btn sm" data-cl="duzelt">Düzelt</button><button class="btn sm" data-cl="ozet">Özetle / maddele</button>'
+            '<button class="btn sm" data-cl="sade">Sadeleştir</button><button class="btn sm" data-cl="resmi">Resmî yazıya çevir</button>'
+            '<span class="mut" style="font-size:.8em">Notun yazısı claude.ai’ye gider.</span></div></details>\n     <button class="btn sm" id="nKilit"', 'notlar claude')
+    komut = r"""var CLK={duzelt:'Aşağıdaki notun yalnız yazım ve noktalama hatalarını düzelt; anlamı ve üslubu değiştirme. Önce düzeltilmiş metni ver, altına değişiklikleri madde madde yaz.',
+ozet:'Aşağıdaki notu sade Türkçeyle kısa maddelere ayır; en başa tek cümlelik ana fikri, en sona ayrı bir Yapılacaklar listesi yaz. Notta olmayan bilgi ekleme.',
+sade:'Aşağıdaki notu anlamını koruyarak daha sade, kısa cümlelerle ve kolay anlaşılır biçimde yeniden yaz.',
+resmi:'Aşağıdaki notu bir yurt müdürlüğü adına resmî yazışma diline (kurum yazısı) çevir: Sayı, Konu, ilgi, metin, saygı ifadesi, imza bloğu. Bilmediğin sayı, tarih ve isimleri uydurma; [köşeli parantez] içinde boş bırak.'};
+document.querySelectorAll('[data-cl]').forEach(function(b){b.onclick=function(){$('cla').open=false;var g=$('govde');var m=(g&&!$('ed').hidden)?g.innerText.trim():'';
+if(!m){toast('Önce bir not açın ya da yazın');return}var bas=$('nBaslik').value.trim();claudeGit(CLK[b.dataset.cl]+'\n\n--- NOT'+(bas?': '+bas:'')+' ---\n'+m)}});
+"""
+    return tek(v, "$('xKopya').onclick=", CLAUDE_GIT + komut + "$('xKopya').onclick=", 'notlar claude')
+
+def ceviri_claude(v):
+    """Çeviri'de '✦ Claude ile çevir' (dil adları seçimden; sonra 3 A1-A2 kelime)."""
+    v = tek(v, '<button class="btn sm" id="temizle">Temizle</button>',
+            '<button class="btn sm" id="clCevir" title="Claude ile çevir">✦ Claude ile çevir</button>\n     <button class="btn sm" id="temizle">Temizle</button>', 'çeviri claude')
+    kod = r"""$('clCevir').onclick=function(){var m=$('kMetin').value.trim();if(!m){toast('Önce çevrilecek metni yazın');return}
+var ad=function(i){var o=$(i).selectedOptions&&$(i).selectedOptions[0];return o?o.textContent.trim():''};var k=ad('kSec'),h=ad('hSec')||'Türkçe';
+claudeGit('Aşağıdaki metni '+(k&&k.indexOf('Otomatik')<0?k+' dilinden ':'')+h+' diline doğal ve doğru biçimde çevir. Önce yalnız çeviriyi ver. Sonra metinden A1-A2 seviyesinde 3 kelime seç; her biri için anlamını ve kısa bir örnek cümle yaz.\n\n--- METİN ---\n'+m)};
+"""
+    return tek(v, "$('temizle').onclick=", CLAUDE_GIT + kod + "$('temizle').onclick=", 'çeviri claude')
+
 def mektubat2_metinler():
     """bolme/mektubat2/*.md içindeki '## N. Mektup — Muhatap' bölümlerini {'2:N': metin} yapar.
     Çeviri: Menzilevî'nin Arapça tercümesinden (Hakîkat Kitâbevi 2002), yapay zekâ, hoca kontrolünden geçmedi."""
@@ -280,7 +323,9 @@ for s in SAYFA:
             eski = b'#yedekAl,#yedekYukle,#yedekDurum{display:none!important}'
             assert veri.count(eski) == 1, 'notlar yaması tutmadı'
             veri = veri.replace(eski, b'#yedekAl,#yedekDurum{display:none!important}')
-            veri = notlar_telefon(veri)
+            veri = notlar_claude(notlar_telefon(veri))
+        if s['id'] == 'ceviri':
+            veri = ceviri_claude(veri)
         degistir(satir, satir.replace('@@%s@@' % s['id'], base64.b64encode(veri).decode()))
     else:
         sonu = '\r\n' if satir + '\r\n' in t else '\n'
