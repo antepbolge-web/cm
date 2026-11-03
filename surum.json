@@ -18,6 +18,6 @@
   "pc_pdf": {"code": 10100, "surum": "1.1.0", "link": "https://drive.google.com/drive/folders/1RZaAfYegu8UU-ngONc4yUy-fDxb6ujEo", "ad": "PDF Asistanı", "exe": "PDF[ _]Asistani", "yenilik": "Claude\u0027a sor: özet, resmî yazı taslağı, maddeler ve tarihler"},
   "pc_dosya": {"code": 10202, "surum": "1.2.2", "link": "https://drive.google.com/drive/folders/1RZaAfYegu8UU-ngONc4yUy-fDxb6ujEo", "ad": "Dosya Yöneticisi", "exe": "Dosya[ _-]Yoneticisi", "yenilik": "Cafer Ailesi temaları: Otomatik, Açık, Koyu, Turkuaz-Altın"},
   "pc_fotograf": {"code": 20006, "surum": "2.0.6", "link": "https://drive.google.com/drive/folders/1RZaAfYegu8UU-ngONc4yUy-fDxb6ujEo", "ad": "Fotoğraf Görüntüleyici", "exe": "Fotograf[ _-]Goruntuleyici", "yenilik": "Cafer Ailesi temaları: Otomatik, Açık, Koyu, Turkuaz-Altın (+ Papirüs)"},
-  "pc_fismatik": {"code": 10301, "surum": "1.3.1", "link": "https://drive.google.com/drive/folders/1RZaAfYegu8UU-ngONc4yUy-fDxb6ujEo", "ad": "Fişmatik", "exe": "Fismatik", "yenilik": ""},
+  "pc_fismatik": {"code": 10302, "surum": "1.3.2", "link": "https://drive.google.com/drive/folders/1RZaAfYegu8UU-ngONc4yUy-fDxb6ujEo", "ad": "Fişmatik", "exe": "Fismatik", "yenilik": "Ailenin ortak Yeni sürüm şeridi"},
   "pc_widget": {"code": 20003, "surum": "2.0.3", "link": "https://drive.google.com/drive/folders/1RZaAfYegu8UU-ngONc4yUy-fDxb6ujEo", "ad": "Masaüstü Widget", "exe": "Masaustu[ _]Widget", "yenilik": "Cafer Ailesi temaları (Otomatik, Açık, Koyu, Turkuaz-Altın) + Sabah vakti"}
 }
