@@ -24,5 +24,6 @@
   "ceviri": {"code": 3, "surum": "1.0.2", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.ceviri", "ad": "Çeviri", "yenilik": "Yeni simge: modern, sade, iOS tarzı"},
   "notdefteri": {"code": 3, "surum": "1.2.0", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.notdefteri", "ad": "Not Defteri", "yenilik": "Birleştirerek içe aktarma, PDF eki, Arapça görünüm, şablonlar, hızlı not, sık satırlar"},
   "arayankim": {"code": 1, "surum": "1.0.0", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.arayankim", "ad": "Arayan Kim", "yenilik": "İlk sürüm: kendi numara listenize göre arayan uyarısı"},
-  "hava": {"code": 2, "surum": "1.0.0", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.hava", "ad": "Hava", "yenilik": "Alarm ve Saat\u0027ten ayrıldı: hava ekranı ve 5 widget"}
+  "hava": {"code": 2, "surum": "1.0.0", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.hava", "ad": "Hava", "yenilik": "Alarm ve Saat\u0027ten ayrıldı: hava ekranı ve 5 widget"},
+  "widget": {"code": 1, "surum": "1.0.0", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.widget", "ad": "Widget", "yenilik": "Alarm ve Saat\u0027ten ayrıldı: saat ve namaz vakti widget\u0027ları"}
 }
