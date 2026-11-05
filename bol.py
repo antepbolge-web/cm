@@ -5,6 +5,8 @@ Kaynak sayfalara dokunmaz; yalnız kabuktaki listeleri süzer. Yedek dosyası 'C
 ki Hepsi'den alınan yedek yeni uygulamada 'Geri yükle' ile açılabilsin."""
 import sys, os, base64, json, re
 kdir, cikti, ad, ids, ara = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4].split(','), sys.argv[5].split(',')
+if 'merkez' in ids:  # MERKEZ_ENGEL 05.11.2026: Merkez 1.1.0 ve sonrasi burada uretilmez
+    sys.exit('HATA: Merkez artik cafer-hepsi deposu apk-yama dali yama/merkez/kaynak/araclar/kur.js ile uretilir.')
 t = open(os.path.join(kdir, 'kabuk.html'), 'rb').read().decode('utf-8').replace('\r\n', '\n')
 
 def degistir(eski, yeni, say=1):
