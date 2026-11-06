@@ -25,5 +25,6 @@
   "notdefteri": {"code": 3, "surum": "1.2.0", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.notdefteri", "ad": "Not Defteri", "yenilik": "Birleştirerek içe aktarma, PDF eki, Arapça görünüm, şablonlar, hızlı not, sık satırlar"},
   "arayankim": {"code": 1, "surum": "1.0.0", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.arayankim", "ad": "Arayan Kim", "yenilik": "İlk sürüm: kendi numara listenize göre arayan uyarısı"},
   "hava": {"code": 3, "surum": "1.0.1", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.hava", "ad": "Hava", "yenilik": "Widget ayar ekranında düğmeler hizalandı, şerit widget\u0027ta şehir adı sığıyor"},
-  "widget": {"code": 3, "surum": "1.0.2", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.widget", "ad": "Widget", "yenilik": "Vakit artık Dijital ve Analog gibi normal bir sekme"}
+  "widget": {"code": 3, "surum": "1.0.2", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.widget", "ad": "Widget", "yenilik": "Vakit artık Dijital ve Analog gibi normal bir sekme"},
+  "kible": {"code": 1, "surum": "1.0.0", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.kible", "ad": "Kıble", "yenilik": "İlk sürüm: Mihrap Işığı, güven göstergesi, Güneşle sağlama"}
 }
