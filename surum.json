@@ -26,5 +26,6 @@
   "arayankim": {"code": 1, "surum": "1.0.0", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.arayankim", "ad": "Arayan Kim", "yenilik": "İlk sürüm: kendi numara listenize göre arayan uyarısı"},
   "hava": {"code": 3, "surum": "1.0.1", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.hava", "ad": "Hava", "yenilik": "Widget ayar ekranında düğmeler hizalandı, şerit widget\u0027ta şehir adı sığıyor"},
   "widget": {"code": 3, "surum": "1.0.2", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.widget", "ad": "Widget", "yenilik": "Vakit artık Dijital ve Analog gibi normal bir sekme"},
-  "kible": {"code": 2, "surum": "1.0.1", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.kible", "ad": "Kıble", "yenilik": "Kapalı konum izni için Ayarlar\u0027a geçiş; konum yaşı uygulama açıkken tazelenir"}
+  "kible": {"code": 2, "surum": "1.0.1", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.kible", "ad": "Kıble", "yenilik": "Kapalı konum izni için Ayarlar\u0027a geçiş; konum yaşı uygulama açıkken tazelenir"},
+  "rotus": {"code": 1, "surum": "1.0.0", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.rotus", "ad": "Rötuş", "yenilik": "Fotoğraf düzenleyici: stil, ışık, renk, kırpma; asıl dosya değişmez."}
 }
