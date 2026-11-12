@@ -28,5 +28,5 @@
   "widget": {"code": 3, "surum": "1.0.2", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.widget", "ad": "Widget", "yenilik": "Vakit artık Dijital ve Analog gibi normal bir sekme"},
   "kible": {"code": 2, "surum": "1.0.1", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.kible", "ad": "Kıble", "yenilik": "Kapalı konum izni için Ayarlar\u0027a geçiş; konum yaşı uygulama açıkken tazelenir"},
   "rotus": {"code": 4, "surum": "1.1.1", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.rotus", "ad": "Rötuş", "yenilik": "Alt çizgi yazıların üstüne binmez; 54 yazı tipi."},
-  "speeddial": {"code": 1, "surum": "1.0.0", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.speeddial", "ad": "Speed Dial", "yenilik": "İlk sürüm: 12 kişi kartı, tuş takımı ve rehber; karta dokununca 2 sn İptal şeridi, sonra arama"}
+  "speeddial": {"code": 2, "surum": "1.0.1", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.speeddial", "ad": "Speed Dial", "yenilik": "Açılış çökmesi düzeltildi"}
 }
