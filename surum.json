@@ -27,6 +27,6 @@
   "hava": {"code": 4, "surum": "1.0.2", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.hava", "ad": "Hava", "yenilik": "Yeni renkli sade simge"},
   "widget": {"code": 5, "surum": "1.0.4", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.widget", "ad": "Saatler", "yenilik": "Yeni ad: Saatler; turuncu sade simge"},
   "kible": {"code": 3, "surum": "1.0.2", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.kible", "ad": "Kıble", "yenilik": "Yeni renkli sade simge"},
-  "rotus": {"code": 4, "surum": "1.1.1", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.rotus", "ad": "Rötuş", "yenilik": "Alt çizgi yazıların üstüne binmez; 54 yazı tipi."},
+  "rotus": {"code": 5, "surum": "1.1.2", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.rotus", "ad": "Rötuş", "yenilik": "Yeni sihirli değnek simgesi"},
   "speeddial": {"code": 7, "surum": "1.2.3", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.speeddial", "ad": "Hızlı Ara", "yenilik": "Yeni ad: Hızlı Ara"}
 }
