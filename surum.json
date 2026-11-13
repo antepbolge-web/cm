@@ -1,6 +1,6 @@
 {
   "_aciklama": "Uygulamalar açılışta bu dosyayı okur; code kendi sürümünden büyükse \u0027Yeni sürüm var\u0027 şeridi çıkar, İndir Drive apk-indir klasörünü açar. Yeni APK Drive\u0027a konunca code ve surum güncellenir. Cafer Güncelleyici her kaydın paket, ad ve yenilik alanlarını da okur; yeni sürümde code, surum ve yenilik birlikte güncellenir.",
-  "merkez": {"code": 19, "surum": "1.1.10", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.merkez", "ad": "Merkez", "yenilik": "Haberler: konu seçimi kayan çip şeridi, dil seçimi anahtar"},
+  "merkez": {"code": 20, "surum": "1.1.11", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.merkez", "ad": "Merkez", "yenilik": "Haberler: dil seçimi seçili konunun içinde (TR | EN)"},
   "vakitmektup": {"code": 19, "surum": "1.1.3", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.vakitmektup", "ad": "Vakit", "yenilik": "Yeni renkli sade simge (büyük hilal)"},
   "fotograf": {"code": 18, "surum": "2.0.8-telefon.18", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.fotograf", "ad": "Galeri", "yenilik": "Yeni ad: Galeri; renkli sade simge"},
   "dosya": {"code": 13, "surum": "1.2.3-telefon.13", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.dosya", "ad": "Dosyalar", "yenilik": "Yeni ad: Dosyalar; açık klasör simgesi"},
