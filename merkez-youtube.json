@@ -1,13 +1,21 @@
 {
- "okunma": "15.11.2026 08:39",
+ "okunma": "16.11.2026 08:39",
  "toplam": 7,
  "kanallar": [
   {
    "ad": "Cevheri Güven",
    "grup": "turkce",
-   "durum": "Yeni video yok",
+   "durum": "okundu",
    "kanalUrl": "https://www.youtube.com/@cevheriguven/videos",
-   "videolar": []
+   "videolar": [
+    {
+     "baslik": "FONDA CİNAYET -  BÜYÜK EMANETÇİ MEZARDA",
+     "url": "https://www.youtube.com/watch?v=HGgrx-joaO0",
+     "zaman": "19 sa. önce yayınlandı",
+     "sure": "54:36",
+     "izlenme": "385 bin görüntüleme"
+    }
+   ]
   },
   {
    "ad": "Adem Yavuz Arslan",
@@ -23,11 +31,11 @@
    "kanalUrl": "https://www.youtube.com/@TR724/videos",
    "videolar": [
     {
-     "baslik": "Duvara tosladılar! Başını örtüp milletin parasını fonlamak nasıl oluyor? | Kum Saati",
-     "url": "https://www.youtube.com/watch?v=H8JKrfGb1PM",
+     "baslik": "Katile tapan kalabalık | Okuma Zamanı",
+     "url": "https://www.youtube.com/watch?v=VTmlsFDsF7I",
      "zaman": "12 sa. önce",
-     "sure": "1:22:31",
-     "izlenme": "34 bin görüntüleme"
+     "sure": "30:41",
+     "izlenme": "12 bin görüntüleme"
     }
    ]
   },
@@ -41,24 +49,24 @@
   {
    "ad": "Said Sefa",
    "grup": "turkce",
-   "durum": "Yeni video yok",
+   "durum": "okundu",
    "kanalUrl": "https://www.youtube.com/@SaidSefa/videos",
-   "videolar": []
+   "videolar": [
+    {
+     "baslik": "SORULAR VE CEVAPLAR",
+     "url": "https://www.youtube.com/watch?v=i0Kw_Phvme4",
+     "zaman": "9 sa. önce yayınlandı",
+     "sure": "1:04:19",
+     "izlenme": "74 bin görüntüleme"
+    }
+   ]
   },
   {
    "ad": "Deli Haber TV",
    "grup": "turkce",
-   "durum": "okundu",
+   "durum": "Yeni video yok",
    "kanalUrl": "https://www.youtube.com/@DeliHaberTv/videos",
-   "videolar": [
-    {
-     "baslik": "EN BÜYÜK ZANLI O! CEMAATLER İSYAN BAYRAĞI ÇEKTİ! SARAY'IN İŞİ ÇOK ZOR!",
-     "url": "https://www.youtube.com/watch?v=9YViHaf7DaM",
-     "zaman": "37 dk. önce",
-     "sure": "1:08:27",
-     "izlenme": "45 görüntüleme"
-    }
-   ]
+   "videolar": []
   },
   {
    "ad": "MC TV",
@@ -74,65 +82,55 @@
    "kanalUrl": "https://www.youtube.com/@medyascope_tv/videos",
    "videolar": [
     {
-     "baslik": "YENİ Parti kurultayı: Özgür Özel nasıl bir ekip kuracak? #CANLI",
-     "url": "https://www.youtube.com/watch?v=CG4ZOhnsZmc",
-     "zaman": "14 sa. önce yayınlandı",
-     "sure": "7:55:55",
-     "izlenme": "14 bin görüntüleme"
+     "baslik": "YENİ Parti CHP'nin gölgesinden ne zaman ve nasıl kurtulacak? | Ruşen Çakır yorumluyor",
+     "url": "https://www.youtube.com/watch?v=qLrGKoEd6wE",
+     "zaman": "1 sa. önce",
+     "sure": "15:54",
+     "izlenme": "851 görüntüleme"
     },
     {
-     "baslik": "Fon vurgunu listesi: Nerede kalmıştık? | Ruşen Çakır yorumluyor",
-     "url": "https://www.youtube.com/watch?v=3PLQTIZoulY",
+     "baslik": "İsrail'de iktidar bilmecesi: Netanyahu gidecek mi, Eisenkot başarabilecek mi?",
+     "url": "https://www.youtube.com/watch?v=TGESellMzoM",
+     "zaman": "16 sa. önce",
+     "sure": "20:20",
+     "izlenme": "2,4 bin görüntüleme"
+    },
+    {
+     "baslik": "Fon vurgununun gösterdiği din ve dindarlık gerçeği | Mustafa Öztürk anlatıyor",
+     "url": "https://www.youtube.com/watch?v=5LrC_8ba59I",
+     "zaman": "18 sa. önce",
+     "sure": "41:35",
+     "izlenme": "17 bin görüntüleme"
+    },
+    {
+     "baslik": "Kurultay izlenimleri: Geçmiş ve gelecek arasındaki YENİ Parti | Ruşen Çakır yorumluyor",
+     "url": "https://www.youtube.com/watch?v=uU50fT26_1E",
      "zaman": "20 sa. önce",
-     "sure": "12:00",
-     "izlenme": "38 bin görüntüleme"
+     "sure": "15:53",
+     "izlenme": "28 bin görüntüleme"
     }
    ]
   },
   {
    "ad": "#ÖZGÜRÜZ",
    "grup": "turkce",
-   "durum": "okundu",
+   "durum": "Yeni video yok",
    "kanalUrl": "https://www.youtube.com/@ozguruzradyo1/videos",
-   "videolar": [
-    {
-     "baslik": "Erdoğan'ın gemisi alabora oluyor! Can Dündar ve Erk Acarer ile Bilanço",
-     "url": "https://www.youtube.com/watch?v=Rc7FTg-9tzQ",
-     "zaman": "10 sa. önce yayınlandı",
-     "sure": "48:46",
-     "izlenme": "66 bin görüntüleme"
-    }
-   ]
+   "videolar": []
   },
   {
    "ad": "Görkem Sakınmaz",
    "grup": "yapayzeka",
-   "durum": "okundu",
+   "durum": "Yeni video yok",
    "kanalUrl": "https://www.youtube.com/@Gorkem.Sakinmaz/videos",
-   "videolar": [
-    {
-     "baslik": "Yapay Zekaya Soru Sormayı Bırak: Tersine Mühendislik Yönetimi",
-     "url": "https://www.youtube.com/watch?v=1bWpJYNM8E8",
-     "zaman": "12 sa. önce",
-     "sure": "11:37",
-     "izlenme": "1,1 bin görüntüleme"
-    }
-   ]
+   "videolar": []
   },
   {
    "ad": "Muhammed Ogulcan",
    "grup": "yapayzeka",
-   "durum": "okundu",
+   "durum": "Yeni video yok",
    "kanalUrl": "https://www.youtube.com/@MuhammedOgulcan/videos",
-   "videolar": [
-    {
-     "baslik": "Claude'a Bir Şehir Verdim, Sitesi Olmayan Her İşletmeye Site Yaptı !",
-     "url": "https://www.youtube.com/watch?v=G0JSl2K76qA",
-     "zaman": "13 sa. önce",
-     "sure": "8:27",
-     "izlenme": "1,9 bin görüntüleme"
-    }
-   ]
+   "videolar": []
   },
   {
    "ad": "İsa Nurdoğdu",
@@ -142,38 +140,5 @@
    "videolar": []
   }
  ],
- "gunIci": [
-  {
-   "kanal": "Cevheri Güven",
-   "baslik": "FONDA CİNAYET -  BÜYÜK EMANETÇİ MEZARDA",
-   "url": "https://www.youtube.com/watch?v=HGgrx-joaO0",
-   "zaman": "9 dk. önce yayınlandı",
-   "sure": "54:36",
-   "izlenme": "35 bin görüntüleme"
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "Kurultay izlenimleri: Geçmiş ve gelecek arasındaki YENİ Parti | Ruşen Çakır yorumluyor",
-   "url": "https://www.youtube.com/watch?v=uU50fT26_1E",
-   "zaman": "1 sa. önce",
-   "sure": "15:53",
-   "izlenme": "1,8 bin görüntüleme"
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "İsrail'de iktidar bilmecesi: Netanyahu gidecek mi, Eisenkot başarabilecek mi?",
-   "url": "https://www.youtube.com/watch?v=TGESellMzoM",
-   "zaman": "3 sa. önce",
-   "sure": "20:20",
-   "izlenme": ""
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "Fon vurgununun gösterdiği din ve dindarlık gerçeği | Mustafa Öztürk anlatıyor",
-   "url": "https://www.youtube.com/watch?v=5LrC_8ba59I",
-   "zaman": "5 sa. önce",
-   "sure": "41:35",
-   "izlenme": ""
-  }
- ]
+ "gunIci": []
 }
