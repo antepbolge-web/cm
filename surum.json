@@ -28,5 +28,5 @@
   "kible": {"code": 4, "surum": "1.0.3", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.kible", "ad": "Kıble", "yenilik": "Jiroskopsuz telefonlarda da yön; Güneş saati daha kesin; konum kapalıysa uyarı"},
   "rotus": {"code": 5, "surum": "1.1.2", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.rotus", "ad": "Rötuş", "yenilik": "Yeni sihirli değnek simgesi"},
   "speeddial": {"code": 9, "surum": "1.3.1", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "paket": "tr.cafer.speeddial", "ad": "Hızlı Ara", "yenilik": "Kart düzenlerken yazılanlar kaybolmuyor; rehber hemen güncelleniyor"},
-  "kilit": {"code": 7, "surum": "1.0.6", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "yenilik": "Yalnız sürgüyle açılır, yazı sığar"}
+  "kilit": {"code": 8, "surum": "1.0.7", "link": "https://drive.google.com/drive/folders/18pdAZmpNp-LtRXBIsK3qW7BPAHIJ3gmu", "yenilik": "Widget genişliği (Tam, Yarım, 1/3, 1/4), küçük sürgü, parmak izi topuzu"}
 }
