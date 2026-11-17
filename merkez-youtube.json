@@ -249,5 +249,54 @@
    ]
   }
  ],
- "gunIci": []
+ "gunIci": [
+  {
+   "kanal": "TR724",
+   "baslik": "SABAH 5'TE POLİS BASKINI! FON BATAKLIĞINDAN ÇIKAMIYOR... [SERBEST ATIŞ]",
+   "url": "https://www.youtube.com/watch?v=X9qOMI-8tUo",
+   "zaman": "3 sa. önce",
+   "sure": "13:28",
+   "izlenme": "17 bin görüntüleme"
+  },
+  {
+   "kanal": "Medyascope TV",
+   "baslik": "Sözcü TV'de neler oluyor? Kayyım sonrası kanal önünden ilk görüntüler",
+   "url": "https://www.youtube.com/watch?v=IM6W2eTCB0c",
+   "zaman": "41 dk. önce",
+   "sure": "11:39",
+   "izlenme": "99 görüntüleme"
+  },
+  {
+   "kanal": "Medyascope TV",
+   "baslik": "Devlet Bahçeli, MHP Grup Toplantısı'nda konuşuyor #CANLI",
+   "url": "https://www.youtube.com/watch?v=d5-6B1wjNY0",
+   "zaman": "1 sa. önce yayınlandı",
+   "sure": "45:06",
+   "izlenme": "5,6 bin görüntüleme"
+  },
+  {
+   "kanal": "Medyascope TV",
+   "baslik": "SÖZCÜ TV'YE KAYYIM ATANDI! POLİS ARAMASI SONA ERDİ #CANLI",
+   "url": "https://www.youtube.com/watch?v=qh7UbrFV6i4",
+   "zaman": "3 sa. önce yayınlandı",
+   "sure": "10:45",
+   "izlenme": "3,2 bin görüntüleme"
+  },
+  {
+   "kanal": "#ÖZGÜRÜZ",
+   "baslik": "Londra Belgeleri Yalanını Çürüttü: \"Kardeşim Yok\" Diyemedi! Can Dündar ve Erk Acarer ile Bilanço",
+   "url": "https://www.youtube.com/watch?v=l4MzgWX4fPo",
+   "zaman": "48 dk. önce",
+   "sure": "4:36",
+   "izlenme": "418 görüntüleme"
+  },
+  {
+   "kanal": "İsa Nurdoğdu",
+   "baslik": "Tarihin En Büyük Halka Arzı mı ? (Claude / Anthropic)",
+   "url": "https://www.youtube.com/watch?v=HRclr_maYJ4",
+   "zaman": "1 sa. önce",
+   "sure": "8:44",
+   "izlenme": "112 görüntüleme"
+  }
+ ]
 }
