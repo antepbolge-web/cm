@@ -1,28 +1,28 @@
 {
- "okunma": "16.11.2026 08:39",
- "toplam": 7,
+ "okunma": "17.11.2026 08:39",
+ "toplam": 22,
  "kanallar": [
   {
    "ad": "Cevheri Güven",
    "grup": "turkce",
-   "durum": "okundu",
+   "durum": "Yeni video yok",
    "kanalUrl": "https://www.youtube.com/@cevheriguven/videos",
-   "videolar": [
-    {
-     "baslik": "FONDA CİNAYET -  BÜYÜK EMANETÇİ MEZARDA",
-     "url": "https://www.youtube.com/watch?v=HGgrx-joaO0",
-     "zaman": "19 sa. önce yayınlandı",
-     "sure": "54:36",
-     "izlenme": "385 bin görüntüleme"
-    }
-   ]
+   "videolar": []
   },
   {
    "ad": "Adem Yavuz Arslan",
    "grup": "turkce",
-   "durum": "Yeni video yok",
+   "durum": "okundu",
    "kanalUrl": "https://www.youtube.com/@AdemYavuzArslanTV/videos",
-   "videolar": []
+   "videolar": [
+    {
+     "baslik": "YERLİ VE MİLLİ SOYGUNDA KRİTİK HAFTAYA GİRDİK",
+     "url": "https://www.youtube.com/watch?v=BQflLQnjHkM",
+     "zaman": "9 sa. önce yayınlandı",
+     "sure": "40:32",
+     "izlenme": "56 bin görüntüleme"
+    }
+   ]
   },
   {
    "ad": "TR724",
@@ -31,20 +31,49 @@
    "kanalUrl": "https://www.youtube.com/@TR724/videos",
    "videolar": [
     {
-     "baslik": "Katile tapan kalabalık | Okuma Zamanı",
-     "url": "https://www.youtube.com/watch?v=VTmlsFDsF7I",
+     "baslik": "İlk bomba geldi; foncu, bir milletvekili! AKP'de yürekler ağızda | Ajans",
+     "url": "https://www.youtube.com/watch?v=Pe3fC44BVG8",
+     "zaman": "15 sa. önce yayınlandı",
+     "sure": "1:26:39",
+     "izlenme": "62 bin görüntüleme"
+    },
+    {
+     "baslik": "Sarayı sarsan büyük sızıntı; Tera'nın başkanı itirafçı oldu, ortalık karışacak | Medyada Bugün",
+     "url": "https://www.youtube.com/watch?v=FyLB3674Tm8",
+     "zaman": "19 sa. önce yayınlandı",
+     "sure": "1:27:24",
+     "izlenme": "37 bin görüntüleme"
+    },
+    {
+     "baslik": "Külliyeciler-Genel Merkezciler; AKP'de ekip kavgası kızıştı | Okyanus Ötesi",
+     "url": "https://www.youtube.com/watch?v=0xb1NvEres8",
      "zaman": "12 sa. önce",
-     "sure": "30:41",
-     "izlenme": "12 bin görüntüleme"
+     "sure": "36:00",
+     "izlenme": "37 bin görüntüleme"
+    },
+    {
+     "baslik": "CEZAEVİNDEKİLER KONUŞMAYA BAŞLADI. FON VURGUNUNDA YENİ İSİMLER [SERBEST ATIŞ]",
+     "url": "https://www.youtube.com/watch?v=9WSjx8U-9FE",
+     "zaman": "23 sa. önce",
+     "sure": "12:25",
+     "izlenme": "40 bin görüntüleme"
     }
    ]
   },
   {
    "ad": "Turhan Bozkurt",
    "grup": "turkce",
-   "durum": "Yeni video yok",
+   "durum": "okundu",
    "kanalUrl": "https://www.youtube.com/@TurhanBozkurt/videos",
-   "videolar": []
+   "videolar": [
+    {
+     "baslik": "Arkasında İş Bankası ve Ziraat var! Garanti yok! Büyük devalüasyon mesajı geldi | Turhan Bozkurt",
+     "url": "https://www.youtube.com/watch?v=VqhtCRH9XnU",
+     "zaman": "12 sa. önce",
+     "sure": "49:19",
+     "izlenme": "178 bin görüntüleme"
+    }
+   ]
   },
   {
    "ad": "Said Sefa",
@@ -53,11 +82,11 @@
    "kanalUrl": "https://www.youtube.com/@SaidSefa/videos",
    "videolar": [
     {
-     "baslik": "SORULAR VE CEVAPLAR",
-     "url": "https://www.youtube.com/watch?v=i0Kw_Phvme4",
-     "zaman": "9 sa. önce yayınlandı",
-     "sure": "1:04:19",
-     "izlenme": "74 bin görüntüleme"
+     "baslik": "AKP SEÇİMLERİ KAYBEDEBİLİR",
+     "url": "https://www.youtube.com/watch?v=V8jt4x1TWDg",
+     "zaman": "11 sa. önce yayınlandı",
+     "sure": "48:31",
+     "izlenme": "101 bin görüntüleme"
     }
    ]
   },
@@ -82,41 +111,105 @@
    "kanalUrl": "https://www.youtube.com/@medyascope_tv/videos",
    "videolar": [
     {
-     "baslik": "YENİ Parti CHP'nin gölgesinden ne zaman ve nasıl kurtulacak? | Ruşen Çakır yorumluyor",
-     "url": "https://www.youtube.com/watch?v=qLrGKoEd6wE",
+     "baslik": "SÖZCÜ TV'YE KAYYIM ATANDI! POLİS ARAMASI DEVAM EDİYOR #CANLI",
+     "url": "https://www.youtube.com/watch?v=tmQTBb4BL9Q",
+     "zaman": "22 dk. önce yayınlandı",
+     "sure": "45:45",
+     "izlenme": "6 bin görüntüleme"
+    },
+    {
+     "baslik": "Medyascope ekibi Antalya'da! Müzakerelerden ne çıktı, bu hafta ne bekleniyor? #CANLI",
+     "url": "https://www.youtube.com/watch?v=OnLYEiHHaBI",
+     "zaman": "13 sa. önce yayınlandı",
+     "sure": "46:34",
+     "izlenme": "1,6 bin görüntüleme"
+    },
+    {
+     "baslik": "YENİ Parti kurultayının gösterdikleri | Fon vurgununda liste beklentisi sürüyor | Hafta Başı #CANLI",
+     "url": "https://www.youtube.com/watch?v=j1gaxEC9aXs",
+     "zaman": "18 sa. önce yayınlandı",
+     "sure": "33:58",
+     "izlenme": "16 bin görüntüleme"
+    },
+    {
+     "baslik": "Fon krizinde yeni belgeler! Ümit Özlale açıklıyor #shorts",
+     "url": "https://www.youtube.com/watch?v=j7p8TI7OTbw",
+     "zaman": "18 sa. önce yayınlandı",
+     "sure": "33:34",
+     "izlenme": "77 bin görüntüleme"
+    },
+    {
+     "baslik": "Fon vurgunu: Gözler AK Partili siyasetçilerde | Ruşen Çakır yorumluyor",
+     "url": "https://www.youtube.com/watch?v=7MUwlv5vqcc",
      "zaman": "1 sa. önce",
-     "sure": "15:54",
-     "izlenme": "851 görüntüleme"
+     "sure": "12:46",
+     "izlenme": "1,4 bin görüntüleme"
     },
     {
-     "baslik": "İsrail'de iktidar bilmecesi: Netanyahu gidecek mi, Eisenkot başarabilecek mi?",
-     "url": "https://www.youtube.com/watch?v=TGESellMzoM",
-     "zaman": "16 sa. önce",
-     "sure": "20:20",
-     "izlenme": "2,4 bin görüntüleme"
+     "baslik": "Ahmet Şık ilk kez anlatıyor! “Yakında bir ismin büyükelçi atanarak cezalandırıldığını duyacaksınız”",
+     "url": "https://www.youtube.com/watch?v=PREknMOP5Pw",
+     "zaman": "9 sa. önce",
+     "sure": "1:16:06",
+     "izlenme": "48 bin görüntüleme"
     },
     {
-     "baslik": "Fon vurgununun gösterdiği din ve dindarlık gerçeği | Mustafa Öztürk anlatıyor",
-     "url": "https://www.youtube.com/watch?v=5LrC_8ba59I",
-     "zaman": "18 sa. önce",
-     "sure": "41:35",
-     "izlenme": "17 bin görüntüleme"
+     "baslik": "Türkiye-AB ilişkilerinde Kıbrıs düğümü | Selim Kuneralp anlatıyor",
+     "url": "https://www.youtube.com/watch?v=pspFwiSMBCU",
+     "zaman": "10 sa. önce",
+     "sure": "41:57",
+     "izlenme": "1,8 bin görüntüleme"
     },
     {
-     "baslik": "Kurultay izlenimleri: Geçmiş ve gelecek arasındaki YENİ Parti | Ruşen Çakır yorumluyor",
-     "url": "https://www.youtube.com/watch?v=uU50fT26_1E",
-     "zaman": "20 sa. önce",
-     "sure": "15:53",
-     "izlenme": "28 bin görüntüleme"
+     "baslik": "Beton kentler, iklim zirvesi ve YENİ Parti’nin ekonomi programı | 8. Gün",
+     "url": "https://www.youtube.com/watch?v=gZd85Vb2dro",
+     "zaman": "11 sa. önce",
+     "sure": "44:33",
+     "izlenme": "1,6 bin görüntüleme"
+    },
+    {
+     "baslik": "Medyascope COP31’in mavi alanında: Antalya’daki iklim zirvesinden özel görüntüler",
+     "url": "https://www.youtube.com/watch?v=iW-Ni_2AUE8",
+     "zaman": "12 sa. önce",
+     "sure": "35:32",
+     "izlenme": "934 görüntüleme"
     }
    ]
   },
   {
    "ad": "#ÖZGÜRÜZ",
    "grup": "turkce",
-   "durum": "Yeni video yok",
+   "durum": "okundu",
    "kanalUrl": "https://www.youtube.com/@ozguruzradyo1/videos",
-   "videolar": []
+   "videolar": [
+    {
+     "baslik": "YENİ PARTİ HER GÜN BİR KELLE ALACAK! Can Dündar ve Erk Acarer ile Bilanço",
+     "url": "https://www.youtube.com/watch?v=NbVobL0rlAA",
+     "zaman": "10 sa. önce yayınlandı",
+     "sure": "46:53",
+     "izlenme": "41 bin görüntüleme"
+    },
+    {
+     "baslik": "Saray'ın Sesi Varank'tan Zehir Zemberek Sözler: \"Müzik Kutusu\" Benzetmesi Kime Gitti?",
+     "url": "https://www.youtube.com/watch?v=-QBGXQ_bsz4",
+     "zaman": "16 sa. önce",
+     "sure": "6:12",
+     "izlenme": "10 bin görüntüleme"
+    },
+    {
+     "baslik": "Kırk Haramiler belli, peki Ali Baba kim? Can Dündar ve Erk Acarer ile Bilanço",
+     "url": "https://www.youtube.com/watch?v=w_qIDEJRG1U",
+     "zaman": "19 sa. önce",
+     "sure": "12:14",
+     "izlenme": "15 bin görüntüleme"
+    },
+    {
+     "baslik": "Kasaba Siyasetine Ağır Darbe: Delege Ağalığı Bitti, Yeni Partide İpler Kimin Eline Geçti?",
+     "url": "https://www.youtube.com/watch?v=8_GBAOTKwrw",
+     "zaman": "20 sa. önce",
+     "sure": "5:07",
+     "izlenme": "4,6 bin görüntüleme"
+    }
+   ]
   },
   {
    "ad": "Görkem Sakınmaz",
@@ -128,98 +221,33 @@
   {
    "ad": "Muhammed Ogulcan",
    "grup": "yapayzeka",
-   "durum": "Yeni video yok",
+   "durum": "okundu",
    "kanalUrl": "https://www.youtube.com/@MuhammedOgulcan/videos",
-   "videolar": []
+   "videolar": [
+    {
+     "baslik": "Google, ChatGPT'yi Geçti Claude ile Yarışıyor! Gemini'nin 3 Yeni Modelinden Hangisini Kullanmalısın?",
+     "url": "https://www.youtube.com/watch?v=YMyw5ieW_Ug",
+     "zaman": "15 sa. önce",
+     "sure": "21:57",
+     "izlenme": "9,8 bin görüntüleme"
+    }
+   ]
   },
   {
    "ad": "İsa Nurdoğdu",
    "grup": "yapayzeka",
-   "durum": "Yeni video yok",
+   "durum": "okundu",
    "kanalUrl": "https://www.youtube.com/@isanurdogdu/videos",
-   "videolar": []
+   "videolar": [
+    {
+     "baslik": "Yapay Zeka ile Üretilen Proje Nasıl Yayımlanır ? (Bugün Başlasaydım FİNAL)",
+     "url": "https://www.youtube.com/watch?v=KUaY3cQrDOo",
+     "zaman": "19 sa. önce",
+     "sure": "14:50",
+     "izlenme": "1,8 bin görüntüleme"
+    }
+   ]
   }
  ],
- "gunIci": [
-  {
-   "kanal": "TR724",
-   "baslik": "CEZAEVİNDEKİLER KONUŞMAYA BAŞLADI. FON VURGUNUNDA YENİ İSİMLER [SERBEST ATIŞ]",
-   "url": "https://www.youtube.com/watch?v=9WSjx8U-9FE",
-   "zaman": "3 sa. önce",
-   "sure": "12:25",
-   "izlenme": ""
-  },
-  {
-   "kanal": "#ÖZGÜRÜZ",
-   "baslik": "Kasaba Siyasetine Ağır Darbe: Delege Ağalığı Bitti, Yeni Partide İpler Kimin Eline Geçti?",
-   "url": "https://www.youtube.com/watch?v=8_GBAOTKwrw",
-   "zaman": "1 sa. önce",
-   "sure": "5:07",
-   "izlenme": ""
-  },
-  {
-   "kanal": "İsa Nurdoğdu",
-   "baslik": "Yapay Zeka ile Üretilen Proje Nasıl Yayımlanır ? (Bugün Başlasaydım FİNAL)",
-   "url": "https://www.youtube.com/watch?v=KUaY3cQrDOo",
-   "zaman": "3 dk. önce",
-   "sure": "14:50",
-   "izlenme": ""
-  },
-  {
-   "kanal": "TR724",
-   "baslik": "İlk bomba geldi; foncu, bir milletvekili! AKP'de yürekler ağızda | Ajans",
-   "url": "https://www.youtube.com/watch?v=Pe3fC44BVG8",
-   "zaman": "1 sa. önce yayınlandı",
-   "sure": "1:26:44",
-   "izlenme": ""
-  },
-  {
-   "kanal": "TR724",
-   "baslik": "Sarayı sarsan büyük sızıntı; Tera'nın başkanı itirafçı oldu, ortalık karışacak | Medyada Bugün",
-   "url": "https://www.youtube.com/watch?v=FyLB3674Tm8",
-   "zaman": "5 sa. önce yayınlandı",
-   "sure": "1:27:24",
-   "izlenme": ""
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "YENİ Parti kurultayının gösterdikleri | Fon vurgununda liste beklentisi sürüyor | Hafta Başı #CANLI",
-   "url": "https://www.youtube.com/watch?v=j1gaxEC9aXs",
-   "zaman": "4 sa. önce yayınlandı",
-   "sure": "33:58",
-   "izlenme": ""
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "Fon krizinde yeni belgeler! Ümit Özlale açıklıyor #shorts",
-   "url": "https://www.youtube.com/watch?v=j7p8TI7OTbw",
-   "zaman": "5 sa. önce yayınlandı",
-   "sure": "33:34",
-   "izlenme": ""
-  },
-  {
-   "kanal": "#ÖZGÜRÜZ",
-   "baslik": "Saray'ın Sesi Varank'tan Zehir Zemberek Sözler: \"Müzik Kutusu\" Benzetmesi Kime Gitti?",
-   "url": "https://www.youtube.com/watch?v=-QBGXQ_bsz4",
-   "zaman": "2 sa. önce",
-   "sure": "6:12",
-   "izlenme": ""
-  },
-  {
-   "kanal": "#ÖZGÜRÜZ",
-   "baslik": "Kırk Haramiler belli, peki Ali Baba kim? Can Dündar ve Erk Acarer ile Bilanço",
-   "url": "https://www.youtube.com/watch?v=w_qIDEJRG1U",
-   "zaman": "5 sa. önce",
-   "sure": "12:14",
-   "izlenme": ""
-  },
-  {
-   "kanal": "Muhammed Ogulcan",
-   "baslik": "Google, ChatGPT'yi Geçti Claude ile Yarışıyor! Gemini'nin 3 Yeni Modelinden Hangisini Kullanmalısın?",
-   "url": "https://www.youtube.com/watch?v=YMyw5ieW_Ug",
-   "zaman": "2 sa. önce",
-   "sure": "21:57",
-   "izlenme": ""
-  }
- ]
+ "gunIci": []
 }
