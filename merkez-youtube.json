@@ -261,5 +261,30 @@
    ]
   }
  ],
- "gunIci": []
+ "gunIci": [
+  {
+   "kanal": "TR724",
+   "baslik": "FONCULAR İTİRAFA BAŞLADI. KÜLÇE KÜLÇE ALTINLAR KİME GİTTİ? [SERBEST ATIŞ]",
+   "url": "https://www.youtube.com/watch?v=T3TOOF6Vdoc",
+   "zaman": "3 sa. önce",
+   "sure": "12:35",
+   "izlenme": ""
+  },
+  {
+   "kanal": "Medyascope TV",
+   "baslik": "Mustafa Öztürk: \"Deizm, İslamcı siyasete tepkinin çatısı haline geliyor\"",
+   "url": "https://www.youtube.com/watch?v=B-U-EcBm-os",
+   "zaman": "1 sa. önce",
+   "sure": "8:31",
+   "izlenme": ""
+  },
+  {
+   "kanal": "Medyascope TV",
+   "baslik": "Müsavat Dervişoğlu, İYİ Parti Grup Toplantısı'nda konuşuyor #CANLI",
+   "url": "https://www.youtube.com/watch?v=97sCfR2xnHQ",
+   "zaman": "1 sa. önce yayınlandı",
+   "sure": "38:11",
+   "izlenme": ""
+  }
+ ]
 }
