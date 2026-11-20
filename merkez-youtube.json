@@ -1,13 +1,21 @@
 {
- "okunma": "19.11.2026 08:39",
- "toplam": 22,
+ "okunma": "20.11.2026 08:38",
+ "toplam": 28,
  "kanallar": [
   {
    "ad": "Cevheri Güven",
    "grup": "turkce",
-   "durum": "Yeni video yok",
+   "durum": "okundu",
    "kanalUrl": "https://www.youtube.com/@cevheriguven/videos",
-   "videolar": []
+   "videolar": [
+    {
+     "baslik": "SON AŞAMA - BÜYÜK KAVGA",
+     "url": "https://www.youtube.com/watch?v=HXOSDemdvXk",
+     "zaman": "11 sa. önce yayınlandı",
+     "sure": "55:36",
+     "izlenme": "359 bin görüntüleme"
+    }
+   ]
   },
   {
    "ad": "Adem Yavuz Arslan",
@@ -16,11 +24,18 @@
    "kanalUrl": "https://www.youtube.com/@AdemYavuzArslanTV/videos",
    "videolar": [
     {
-     "baslik": "KİM O DAHİLİ VE HARİCİ BEDHAHLAR ?  BAHÇELİ'NİN YENİ HEDEFİ NOW TV Mİ ?",
-     "url": "https://www.youtube.com/watch?v=jMfVqeH-aPs",
-     "zaman": "8 sa. önce yayınlandı",
-     "sure": "34:28",
-     "izlenme": "55 bin görüntüleme"
+     "baslik": "How Erdoğan Silences Turkey’s Media: From TV Takeovers to YouTube Bans",
+     "url": "https://www.youtube.com/watch?v=UiZDA6R1NxM",
+     "zaman": "12 sa. önce",
+     "sure": "5:32",
+     "izlenme": "2,4 bin görüntüleme"
+    },
+    {
+     "baslik": "VE 'REİS'İN GÜCÜ YETMEDİ,  ÇALMAKTAN YORULMAMIŞLAR",
+     "url": "https://www.youtube.com/watch?v=QG-tH0A_fdY",
+     "zaman": "7 sa. önce yayınlandı",
+     "sure": "1:15:01",
+     "izlenme": "103 bin görüntüleme"
     }
    ]
   },
@@ -31,56 +46,56 @@
    "kanalUrl": "https://www.youtube.com/@TR724/videos",
    "videolar": [
     {
-     "baslik": "Erdoğan ekipler savaşını durduramıyor; eline ayağına dolandı | Editör Masası",
-     "url": "https://www.youtube.com/watch?v=Zt77XsbvFt4",
-     "zaman": "12 sa. önce",
-     "sure": "1:07:17",
-     "izlenme": "84 bin görüntüleme"
-    },
-    {
-     "baslik": "FONCULAR İTİRAFA BAŞLADI. KÜLÇE KÜLÇE ALTINLAR KİME GİTTİ? [SERBEST ATIŞ]",
-     "url": "https://www.youtube.com/watch?v=T3TOOF6Vdoc",
-     "zaman": "23 sa. önce",
-     "sure": "12:35",
-     "izlenme": "39 bin görüntüleme"
-    },
-    {
-     "baslik": "Yangın büyüyor; nihayet çağrıldı! Sıra AKP'li vekilin eşinde... Tayyar'dan AKP alarmı | Ajans",
-     "url": "https://www.youtube.com/watch?v=CQIQMrrAayo",
+     "baslik": "'Kiler' açıldı; bir günde 6 milyar TL! Adaylık tabutuna bir çivi daha | Ajans",
+     "url": "https://www.youtube.com/watch?v=5xcO2JVIw0I",
      "zaman": "15 sa. önce yayınlandı",
-     "sure": "1:17:42",
-     "izlenme": "30 bin görüntüleme"
+     "sure": "1:02:50",
+     "izlenme": "19 bin görüntüleme"
     },
     {
-     "baslik": "Hayati Yazıcı devri bitti; İstifa an meselesi! Oğlu devir işlerinin sonuna geldi | Medyada Bugün",
-     "url": "https://www.youtube.com/watch?v=05BM5YtBwPQ",
-     "zaman": "18 sa. önce yayınlandı",
-     "sure": "1:40:43",
-     "izlenme": "56 bin görüntüleme"
+     "baslik": "Fon yetmedi şimdi de HGS; icralar patladı, isyan büyüyor | Medyada Bugün",
+     "url": "https://www.youtube.com/watch?v=Sps_92C6NPo",
+     "zaman": "19 sa. önce yayınlandı",
+     "sure": "1:25:02",
+     "izlenme": "34 bin görüntüleme"
+    },
+    {
+     "baslik": "Posta koydu; sır küpüne dokunamadı! Burada kalmayacak, itirafçı korkusu | Çıkış Yolu",
+     "url": "https://www.youtube.com/watch?v=PX0h5Oij_0k",
+     "zaman": "11 sa. önce",
+     "sure": "41:15",
+     "izlenme": "24 bin görüntüleme"
+    },
+    {
+     "baslik": "OĞLUNU YİNE KURTARDI! TUTUKLAYAMADILAR [SERBEST ATIŞ]",
+     "url": "https://www.youtube.com/watch?v=OY0nQvPOEzI",
+     "zaman": "23 sa. önce",
+     "sure": "11:08",
+     "izlenme": "38 bin görüntüleme"
     }
    ]
   },
   {
    "ad": "Turhan Bozkurt",
    "grup": "turkce",
-   "durum": "Yeni video yok",
+   "durum": "okundu",
    "kanalUrl": "https://www.youtube.com/@TurhanBozkurt/videos",
-   "videolar": []
+   "videolar": [
+    {
+     "baslik": "Esas felaket serisi geliyor... Bankalar sıfırlanacak! Fondan kaçan para dolara | Turhan Bozkurt",
+     "url": "https://www.youtube.com/watch?v=K7WMMzPRLnQ",
+     "zaman": "12 sa. önce",
+     "sure": "44:37",
+     "izlenme": "173 bin görüntüleme"
+    }
+   ]
   },
   {
    "ad": "Said Sefa",
    "grup": "turkce",
-   "durum": "okundu",
+   "durum": "Yeni video yok",
    "kanalUrl": "https://www.youtube.com/@SaidSefa/videos",
-   "videolar": [
-    {
-     "baslik": "AKP KURMAYLARI HAPSİ BOYLAYACAK",
-     "url": "https://www.youtube.com/watch?v=mrKy10A2FCk",
-     "zaman": "11 sa. önce yayınlandı",
-     "sure": "1:02:24",
-     "izlenme": "112 bin görüntüleme"
-    }
-   ]
+   "videolar": []
   },
   {
    "ad": "Deli Haber TV",
@@ -89,18 +104,18 @@
    "kanalUrl": "https://www.youtube.com/@DeliHaberTv/videos",
    "videolar": [
     {
-     "baslik": "3 KRİTİK İSİM YANDI! İTİRAF ÜSTÜNE İTİRAF! KASIM’DA FON BAŞKADIR!",
-     "url": "https://www.youtube.com/watch?v=hbLTEgdWDWQ",
+     "baslik": "DİPLOMA İPTAL! İMAMOĞLU DEVRE DIŞI! BELEDİYELERE ERDOĞAN HANÇERİ!",
+     "url": "https://www.youtube.com/watch?v=70zyFqx5I3M",
      "zaman": "1 sa. önce",
-     "sure": "18:40",
-     "izlenme": "72 görüntüleme"
+     "sure": "19:42",
+     "izlenme": "45 görüntüleme"
     },
     {
-     "baslik": "ZORBA! KÖŞEYE SIKIŞTI, BATAKLIĞA BATTI! İŞTE EN BÜYÜK MEDYA PATRONU!",
-     "url": "https://www.youtube.com/watch?v=_9jmdz3enA0",
-     "zaman": "15 sa. önce",
-     "sure": "22:26",
-     "izlenme": "2,8 bin görüntüleme"
+     "baslik": "İTİRAF ÜSTÜNE İTİRAF!",
+     "url": "https://www.youtube.com/watch?v=gjg4DBBvZPk",
+     "zaman": "20 sa. önce",
+     "sure": "4:24",
+     "izlenme": "488 görüntüleme"
     }
    ]
   },
@@ -118,105 +133,132 @@
    "kanalUrl": "https://www.youtube.com/@medyascope_tv/videos",
    "videolar": [
     {
-     "baslik": "Fon vurgunu: İktidar içi kavgalar bir iç savaşa doğru seyrediyor | Ruşen Çakır yorumluyor",
-     "url": "https://www.youtube.com/watch?v=ORdECB9epeg",
+     "baslik": "Şayet seçmen terk ediyorsa bu belediye başkanları neden AKP'ye geçiyor? | Ruşen Çakır yorumluyor",
+     "url": "https://www.youtube.com/watch?v=1-8TUPw7iQs",
      "zaman": "1 sa. önce",
-     "sure": "14:46",
-     "izlenme": "2,7 bin görüntüleme"
+     "sure": "17:47",
+     "izlenme": "2 bin görüntüleme"
     },
     {
-     "baslik": "“Kürtler olmadan Türkiye’de demokrasi olmaz, Kürtler değişimin anahtarıdır” | Erol Katırcıoğlu",
-     "url": "https://www.youtube.com/watch?v=0gADv4iMryU",
-     "zaman": "11 sa. önce",
-     "sure": "53:34",
-     "izlenme": "4,2 bin görüntüleme"
+     "baslik": "Halkların İklim Zirvesi sonuç bildirgesi: \"Ekokırım suç sayılsın, fosil yakıtlardan çıkılsın\"",
+     "url": "https://www.youtube.com/watch?v=l5Q8JkXKo3U",
+     "zaman": "12 sa. önce",
+     "sure": "9:52",
+     "izlenme": "972 görüntüleme"
     },
     {
-     "baslik": "CHP kurultay davası: İmamoğlu’na hapis ve siyasi yasak | Özgür Çelik'ten açıklama",
-     "url": "https://www.youtube.com/watch?v=l5t4cgso5Gw",
+     "baslik": "İmamoğlu'nun diploma iptali | Fon krizi | İlkan Dalkuç | Konuşmazsak Olmaz",
+     "url": "https://www.youtube.com/watch?v=DNAqiLe1LmY",
      "zaman": "13 sa. önce",
-     "sure": "19:42",
-     "izlenme": "19 bin görüntüleme"
+     "sure": "57:17",
+     "izlenme": "9,5 bin görüntüleme"
     },
     {
-     "baslik": "Fon vurgununda son rakamları Erdoğan açıkladı: 500 şüpheliden 136'sı tutuklandı",
-     "url": "https://www.youtube.com/watch?v=S12XkY3CIwk",
+     "baslik": "Trump, Şi ve Putin Şenzen'de buluştu: Nükleer silahlar masadaydı",
+     "url": "https://www.youtube.com/watch?v=UYH228gtc7M",
      "zaman": "15 sa. önce",
-     "sure": "6:35",
-     "izlenme": "1,1 bin görüntüleme"
-    },
-    {
-     "baslik": "Mustafa Öztürk: \"Deizm, İslamcı siyasete tepkinin çatısı haline geliyor\"",
-     "url": "https://www.youtube.com/watch?v=B-U-EcBm-os",
-     "zaman": "20 sa. önce",
-     "sure": "8:31",
-     "izlenme": "9,2 bin görüntüleme"
+     "sure": "6:58",
+     "izlenme": "3,1 bin görüntüleme"
     },
     {
      "baslik": "Meclis Genel Kurulu görüşmeleri devam ediyor #CANLI",
-     "url": "https://www.youtube.com/watch?v=ko2eR840FpY",
-     "zaman": "12 sa. önce yayınlandı",
-     "sure": "5:50:51",
-     "izlenme": "6,1 bin görüntüleme"
+     "url": "https://www.youtube.com/watch?v=5GAoIo9rpwE",
+     "zaman": "13 sa. önce yayınlandı",
+     "sure": "5:03:31",
+     "izlenme": "20 bin görüntüleme"
     },
     {
-     "baslik": "COP31'de diplomasi trafiği hızlandı, ikinci taslak metin bekleniyor | Öykü Şenlen & Barış Doğru",
-     "url": "https://www.youtube.com/watch?v=QljG3w5t9SI",
-     "zaman": "14 sa. önce yayınlandı",
-     "sure": "29:16",
-     "izlenme": "1,5 bin görüntüleme"
+     "baslik": "COP31: Yayınlanan ikinci taslak metin hayal kırıklığı mı? | Semra Cerit Mazlum & Meral Tosun #CANLI",
+     "url": "https://www.youtube.com/watch?v=vMypnOeX5Z8",
+     "zaman": "13 sa. önce yayınlandı",
+     "sure": "41:11",
+     "izlenme": "1,6 bin görüntüleme"
     },
     {
-     "baslik": "Özgür Özel’den TBMM'de Takip Komisyonu açıklaması: “Önce verdiğiniz sözleri tutun”",
-     "url": "https://www.youtube.com/watch?v=beHkn6qBxG4",
-     "zaman": "16 sa. önce yayınlandı",
-     "sure": "20:13",
-     "izlenme": "9,6 bin görüntüleme"
-    },
-    {
-     "baslik": "Ümit Özlale’den fon soruşturmasında Pasifik ve Asuman Erdoğan iddiası #CANLI",
-     "url": "https://www.youtube.com/watch?v=uLovKeX0MRY",
-     "zaman": "18 sa. önce yayınlandı",
-     "sure": "31:31",
-     "izlenme": "36 bin görüntüleme"
-    },
-    {
-     "baslik": "Erdoğan: \"Emeklilerin tamamını kapsayan iyileştirme yılbaşından önce yapılacak\" #CANLI",
-     "url": "https://www.youtube.com/watch?v=PjaWkCWR-Fg",
-     "zaman": "19 sa. önce yayınlandı",
-     "sure": "54:18",
-     "izlenme": "5,5 bin görüntüleme"
-    },
-    {
-     "baslik": "Dervişoğlu, Erdoğan'a: \"Artık 'kandırıldım' deme! Çık, bu aziz milletten aman dile\" #CANLI",
-     "url": "https://www.youtube.com/watch?v=97sCfR2xnHQ",
-     "zaman": "21 sa. önce yayınlandı",
-     "sure": "37:56",
+     "baslik": "Murat Kurum Antalya'da açıklama yapıyor #CANLI",
+     "url": "https://www.youtube.com/watch?v=p4duX2Bjr9U",
+     "zaman": "15 sa. önce yayınlandı",
+     "sure": "55:27",
      "izlenme": "4,9 bin görüntüleme"
+    },
+    {
+     "baslik": "Gazeteci İsmail Arı, tahliyesinin ardından Sincan Cezaevi önünde açıklama yapıyor #CANLI",
+     "url": "https://www.youtube.com/watch?v=6N8xDt4NmE0",
+     "zaman": "16 sa. önce yayınlandı",
+     "sure": "5:49",
+     "izlenme": "16 bin görüntüleme"
+    },
+    {
+     "baslik": "Putin'den APEC Zirvesi sonrası açıklama: Şi-Trump görüşmesinin ardından ilk basın toplantısı #CANLI",
+     "url": "https://www.youtube.com/watch?v=ijEDDdFrEi8",
+     "zaman": "16 sa. önce yayınlandı",
+     "sure": "1:03:26",
+     "izlenme": "9,7 bin görüntüleme"
+    },
+    {
+     "baslik": "Antalya, Tekirdağ ve Beyoğlu belediyeleri AKP’ye geçti: Erdoğan rozetlerini taktı #CANLI",
+     "url": "https://www.youtube.com/watch?v=wLIcFf8REZ4",
+     "zaman": "17 sa. önce yayınlandı",
+     "sure": "58:00",
+     "izlenme": "5 bin görüntüleme"
+    },
+    {
+     "baslik": "YENİ Parti İzleme Komisyonu'na katılmıyor: DEM Parti ne diyecek? #CANLI",
+     "url": "https://www.youtube.com/watch?v=Dfp2ioHQoRk",
+     "zaman": "18 sa. önce yayınlandı",
+     "sure": "33:16",
+     "izlenme": "2,1 bin görüntüleme"
+    },
+    {
+     "baslik": "Gazeteci İsmail Arı beraat etti: Duruşmasının ardından basın açıklaması yapılıyor #CANLI",
+     "url": "https://www.youtube.com/watch?v=022-PZfaN3s",
+     "zaman": "18 sa. önce yayınlandı",
+     "sure": "9:19",
+     "izlenme": "12 bin görüntüleme"
+    },
+    {
+     "baslik": "Ümit Özlale fon soruşturmasında yeni belgeler açıklıyor #CANLI",
+     "url": "https://www.youtube.com/watch?v=S2wJBeFWuPc",
+     "zaman": "19 sa. önce yayınlandı",
+     "sure": "34:11",
+     "izlenme": "31 bin görüntüleme"
+    },
+    {
+     "baslik": "Putin, Trump ve Şi'den tarihi üçlü zirve #CANLI",
+     "url": "https://www.youtube.com/watch?v=Ata_jaeK4NU",
+     "zaman": "20 sa. önce yayınlandı",
+     "sure": "35:57",
+     "izlenme": "2,4 bin görüntüleme"
+    },
+    {
+     "baslik": "Dünya halleri: Aydınlıktan karanlığa, karanlıktan aydınlığa | Ağır Ekonomi #CANLI",
+     "url": "https://www.youtube.com/watch?v=W65xRtFSaFo",
+     "zaman": "20 sa. önce yayınlandı",
+     "sure": "49:15",
+     "izlenme": "3,5 bin görüntüleme"
+    },
+    {
+     "baslik": "Putin, Trump ve Şi'den tarihi üçlü zirve #CANLI",
+     "url": "https://www.youtube.com/watch?v=SWGD8lN999o",
+     "zaman": "20 sa. önce yayınlandı",
+     "sure": "59:11",
+     "izlenme": "2,6 bin görüntüleme"
+    },
+    {
+     "baslik": "Fon mağdurları ve siyasi parti temsilcileri, SPK önünde açıklama yapıyor #CANLI",
+     "url": "https://www.youtube.com/watch?v=_RdFg7Wq8kw",
+     "zaman": "21 sa. önce yayınlandı",
+     "sure": "1:06:40",
+     "izlenme": "10 bin görüntüleme"
     }
    ]
   },
   {
    "ad": "#ÖZGÜRÜZ",
    "grup": "turkce",
-   "durum": "okundu",
+   "durum": "Yeni video yok",
    "kanalUrl": "https://www.youtube.com/@ozguruzradyo1/videos",
-   "videolar": [
-    {
-     "baslik": "Can Dündar: Hanedanı kaldırma zamanı!",
-     "url": "https://www.youtube.com/watch?v=eCP3f_FVY30",
-     "zaman": "10 sa. önce",
-     "sure": "2:40",
-     "izlenme": "22 bin görüntüleme"
-    },
-    {
-     "baslik": "Mehmet Şimşek \"Yok\" Demişti Ama Coin Üzerinden Yurt Dışına Kaçırmışlar!",
-     "url": "https://www.youtube.com/watch?v=-evxeBZ54nA",
-     "zaman": "19 sa. önce",
-     "sure": "9:10",
-     "izlenme": "11 bin görüntüleme"
-    }
-   ]
+   "videolar": []
   },
   {
    "ad": "Görkem Sakınmaz",
@@ -239,167 +281,14 @@
    "kanalUrl": "https://www.youtube.com/@isanurdogdu/videos",
    "videolar": [
     {
-     "baslik": "OpenAI Bütün Kozlarını Oynadı! GPT-6.2 Astra Nasıl ?",
-     "url": "https://www.youtube.com/watch?v=zjKPYANQ5V8",
-     "zaman": "16 sa. önce",
-     "sure": "15:55",
-     "izlenme": "4,8 bin görüntüleme"
+     "baslik": "n8n Geri Döndü, Claude ve GPT'ye Bedava Rakip Çıkardı",
+     "url": "https://www.youtube.com/watch?v=ND46Nq1L9ug",
+     "zaman": "19 sa. önce",
+     "sure": "16:39",
+     "izlenme": "11 bin görüntüleme"
     }
    ]
   }
  ],
- "gunIci": [
-  {
-   "kanal": "TR724",
-   "baslik": "OĞLUNU YİNE KURTARDI! TUTUKLAYAMADILAR [SERBEST ATIŞ]",
-   "url": "https://www.youtube.com/watch?v=OY0nQvPOEzI",
-   "zaman": "3 sa. önce",
-   "sure": "11:08",
-   "izlenme": ""
-  },
-  {
-   "kanal": "Deli Haber TV",
-   "baslik": "İTİRAF ÜSTÜNE İTİRAF!",
-   "url": "https://www.youtube.com/watch?v=gjg4DBBvZPk",
-   "zaman": "1 sa. önce",
-   "sure": "4:24",
-   "izlenme": ""
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "Putin, Trump ve Şi'den tarihi üçlü zirve #CANLI",
-   "url": "https://www.youtube.com/watch?v=Ata_jaeK4NU",
-   "zaman": "33 dk. önce yayınlandı",
-   "sure": "38:44",
-   "izlenme": ""
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "Dünya halleri: Aydınlıktan karanlığa, karanlıktan aydınlığa | Ağır Ekonomi #CANLI",
-   "url": "https://www.youtube.com/watch?v=W65xRtFSaFo",
-   "zaman": "1 sa. önce yayınlandı",
-   "sure": "49:07",
-   "izlenme": ""
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "Putin, Trump ve Şi'den tarihi üçlü zirve #CANLI",
-   "url": "https://www.youtube.com/watch?v=SWGD8lN999o",
-   "zaman": "1 sa. önce yayınlandı",
-   "sure": "58:56",
-   "izlenme": ""
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "Fon mağdurları ve siyasi parti temsilcileri, SPK önünde açıklama yapıyor #CANLI",
-   "url": "https://www.youtube.com/watch?v=_RdFg7Wq8kw",
-   "zaman": "1 sa. önce yayınlandı",
-   "sure": "1:07:09",
-   "izlenme": ""
-  },
-  {
-   "kanal": "TR724",
-   "baslik": "'Kiler' açıldı; bir günde 6 milyar TL! Adaylık tabutuna bir çivi daha | Ajans",
-   "url": "https://www.youtube.com/watch?v=5xcO2JVIw0I",
-   "zaman": "2 sa. önce yayınlandı",
-   "sure": "1:02:50",
-   "izlenme": ""
-  },
-  {
-   "kanal": "TR724",
-   "baslik": "Fon yetmedi şimdi de HGS; icralar patladı, isyan büyüyor | Medyada Bugün",
-   "url": "https://www.youtube.com/watch?v=Sps_92C6NPo",
-   "zaman": "5 sa. önce yayınlandı",
-   "sure": "1:25:02",
-   "izlenme": ""
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "Trump, Şi ve Putin Şenzen'de buluştu: Nükleer silahlar masadaydı",
-   "url": "https://www.youtube.com/watch?v=UYH228gtc7M",
-   "zaman": "1 sa. önce",
-   "sure": "6:58",
-   "izlenme": ""
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "Meclis Genel Kurulu görüşmeleri devam ediyor #CANLI",
-   "url": "https://www.youtube.com/watch?v=5GAoIo9rpwE",
-   "zaman": "4 dk. önce yayınlandı",
-   "sure": "5:03:18",
-   "izlenme": ""
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "COP31: Yayınlanan ikinci taslak metin hayal kırıklığı mı? | Semra Cerit Mazlum & Meral Tosun #CANLI",
-   "url": "https://www.youtube.com/watch?v=vMypnOeX5Z8",
-   "zaman": "26 dk. önce yayınlandı",
-   "sure": "41:22",
-   "izlenme": ""
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "Murat Kurum Antalya'da açıklama yapıyor #CANLI",
-   "url": "https://www.youtube.com/watch?v=p4duX2Bjr9U",
-   "zaman": "2 sa. önce yayınlandı",
-   "sure": "55:46",
-   "izlenme": ""
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "Gazeteci İsmail Arı, tahliyesinin ardından Sincan Cezaevi önünde açıklama yapıyor #CANLI",
-   "url": "https://www.youtube.com/watch?v=6N8xDt4NmE0",
-   "zaman": "3 sa. önce yayınlandı",
-   "sure": "5:49",
-   "izlenme": ""
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "Putin'den APEC Zirvesi sonrası açıklama: Şi-Trump görüşmesinin ardından ilk basın toplantısı #CANLI",
-   "url": "https://www.youtube.com/watch?v=ijEDDdFrEi8",
-   "zaman": "3 sa. önce yayınlandı",
-   "sure": "1:03:10",
-   "izlenme": ""
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "Antalya, Tekirdağ ve Beyoğlu belediyeleri AKP’ye geçti: Erdoğan rozetlerini taktı #CANLI",
-   "url": "https://www.youtube.com/watch?v=wLIcFf8REZ4",
-   "zaman": "4 sa. önce yayınlandı",
-   "sure": "57:42",
-   "izlenme": ""
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "YENİ Parti İzleme Komisyonu'na katılmıyor: DEM Parti ne diyecek? #CANLI",
-   "url": "https://www.youtube.com/watch?v=Dfp2ioHQoRk",
-   "zaman": "5 sa. önce yayınlandı",
-   "sure": "33:17",
-   "izlenme": ""
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "Gazeteci İsmail Arı beraat etti: Duruşmasının ardından basın açıklaması yapılıyor #CANLI",
-   "url": "https://www.youtube.com/watch?v=022-PZfaN3s",
-   "zaman": "5 sa. önce yayınlandı",
-   "sure": "9:19",
-   "izlenme": ""
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "Ümit Özlale fon soruşturmasında yeni belgeler açıklıyor #CANLI",
-   "url": "https://www.youtube.com/watch?v=S2wJBeFWuPc",
-   "zaman": "5 sa. önce yayınlandı",
-   "sure": "34:11",
-   "izlenme": ""
-  },
-  {
-   "kanal": "İsa Nurdoğdu",
-   "baslik": "n8n Geri Döndü, Claude ve GPT'ye Bedava Rakip Çıkardı",
-   "url": "https://www.youtube.com/watch?v=ND46Nq1L9ug",
-   "zaman": "5 sa. önce",
-   "sure": "16:39",
-   "izlenme": ""
-  }
- ]
+ "gunIci": []
 }
