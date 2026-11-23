@@ -1,20 +1,36 @@
 {
- "okunma": "22.11.2026 08:33",
+ "okunma": "23.11.2026 08:35",
  "toplam": 10,
  "kanallar": [
   {
    "ad": "Cevheri Güven",
    "grup": "turkce",
-   "durum": "Yeni video yok",
+   "durum": "okundu",
    "kanalUrl": "https://www.youtube.com/@cevheriguven/videos",
-   "videolar": []
+   "videolar": [
+    {
+     "baslik": "BİRBİRİNE KIRDIRMA SÜRECİ BAŞLADI",
+     "url": "https://www.youtube.com/watch?v=r9vh7s_f7jE",
+     "zaman": "19 sa. önce yayınlandı",
+     "sure": "45:26",
+     "izlenme": "370 bin görüntüleme"
+    }
+   ]
   },
   {
    "ad": "Adem Yavuz Arslan",
    "grup": "turkce",
-   "durum": "Yeni video yok",
+   "durum": "okundu",
    "kanalUrl": "https://www.youtube.com/@AdemYavuzArslanTV/videos",
-   "videolar": []
+   "videolar": [
+    {
+     "baslik": "ERDOĞAN'IN 'FİDAN'I SON DÜZLÜKTE; KOD ADI SAVAŞ !",
+     "url": "https://www.youtube.com/watch?v=ZXAzXckE2kU",
+     "zaman": "7 sa. önce yayınlandı",
+     "sure": "1:24:28",
+     "izlenme": "130 bin görüntüleme"
+    }
+   ]
   },
   {
    "ad": "TR724",
@@ -23,11 +39,18 @@
    "kanalUrl": "https://www.youtube.com/@TR724/videos",
    "videolar": [
     {
-     "baslik": "İngiliz dergisi olacakları yazdı; fon obruğu Erdoğan’a yaklaşıyor! AKP çok huzursuz | Kum Saati",
-     "url": "https://www.youtube.com/watch?v=MA-6cUaz5Jw",
-     "zaman": "12 sa. önce",
-     "sure": "1:29:53",
-     "izlenme": "175 bin görüntüleme"
+     "baslik": "17 aylık kızımla çıplak arandık; onlar utansın! | RÖPORTAJ",
+     "url": "https://www.youtube.com/watch?v=6SsbfnECKBU",
+     "zaman": "10 sa. önce",
+     "sure": "38:56",
+     "izlenme": "10 bin görüntüleme"
+    },
+    {
+     "baslik": "Herkes biliyordu, kimse bir şey yapmadı | Kırmızı Pazartesi | Okuma Zamanı",
+     "url": "https://www.youtube.com/watch?v=NukxSS_J_Tg",
+     "zaman": "14 sa. önce",
+     "sure": "26:56",
+     "izlenme": "17 bin görüntüleme"
     }
    ]
   },
@@ -48,17 +71,9 @@
   {
    "ad": "Deli Haber TV",
    "grup": "turkce",
-   "durum": "okundu",
+   "durum": "Yeni video yok",
    "kanalUrl": "https://www.youtube.com/@DeliHaberTv/videos",
-   "videolar": [
-    {
-     "baslik": "SARAY'DA FON DEPREMİ! ANKETLER ŞAŞTI HESAP KARIŞTI! SAHTE SEÇMEN PLANI İFŞA OLDU!",
-     "url": "https://www.youtube.com/watch?v=W0--tHYodNc",
-     "zaman": "33 dk. önce",
-     "sure": "57:24",
-     "izlenme": "32 görüntüleme"
-    }
-   ]
+   "videolar": []
   },
   {
    "ad": "MC TV",
@@ -74,46 +89,32 @@
    "kanalUrl": "https://www.youtube.com/@medyascope_tv/videos",
    "videolar": [
     {
-     "baslik": "Halkın Gücü: Cumhuriyet'in bilinmeyen tarihi | Murat Metinsoy | Toplum ve Siyaset",
-     "url": "https://www.youtube.com/watch?v=27kKfpRBdqg",
-     "zaman": "16 sa. önce",
-     "sure": "38:23",
-     "izlenme": "2,7 bin görüntüleme"
+     "baslik": "YENİ Parti ile DEM Parti: Yollar iyice ayrılıyor mu? | Ruşen Çakır yorumluyor",
+     "url": "https://www.youtube.com/watch?v=Q_H38Vniz6k",
+     "zaman": "1 sa. önce",
+     "sure": "15:40",
+     "izlenme": "1,3 bin görüntüleme"
     },
     {
-     "baslik": "YENİ Parti kurultayının ve süreçle ilgili yeni tutumunun düşündürdükleri | Edgar Şar & Ruşen Çakır",
-     "url": "https://www.youtube.com/watch?v=W-WlhEXGYbA",
-     "zaman": "17 sa. önce",
-     "sure": "47:54",
-     "izlenme": "14 bin görüntüleme"
-    },
-    {
-     "baslik": "Skolastisizmden devrime: Marksist perspektifte din, laiklik ve tarih tezleri | Dünya Alem",
-     "url": "https://www.youtube.com/watch?v=Ti82xipCc00",
-     "zaman": "18 sa. önce",
-     "sure": "1:01:28",
-     "izlenme": "10 bin görüntüleme"
-    },
-    {
-     "baslik": "İnsanları kalıplara sokan sistem: Todd Rose'un Ortalamanın Sonu kitabı üzerine | Eksik Olan",
-     "url": "https://www.youtube.com/watch?v=ROLgbLA-6DI",
+     "baslik": "İzmir Harmandalı kayıyor: \"İnsanlar çöpün altında kalacak\"",
+     "url": "https://www.youtube.com/watch?v=C4me6qbY1X0",
      "zaman": "19 sa. önce",
-     "sure": "59:49",
-     "izlenme": "3 bin görüntüleme"
+     "sure": "6:16",
+     "izlenme": "5,2 bin görüntüleme"
     },
     {
-     "baslik": "YENİ Parti sürecin içinde mi, dışında mı, karşısında mı? | Ruşen Çakır yorumluyor",
-     "url": "https://www.youtube.com/watch?v=m9AwgwD21PU",
+     "baslik": "Ekrem İmamoğlu ile Mansur Yavaş farkı | Ruşen Çakır yorumluyor",
+     "url": "https://www.youtube.com/watch?v=WdGnLfcyqUc",
      "zaman": "20 sa. önce",
-     "sure": "19:47",
-     "izlenme": "19 bin görüntüleme"
+     "sure": "14:42",
+     "izlenme": "39 bin görüntüleme"
     },
     {
-     "baslik": "Bir Başkadır 2. sezon: Bir terapi odasına sığdırılan Türkiye | Spoiler Serbest",
-     "url": "https://www.youtube.com/watch?v=ZBAIUC_AVnc",
-     "zaman": "22 sa. önce",
-     "sure": "32:09",
-     "izlenme": "20 bin görüntüleme"
+     "baslik": "YENİ Parti'den \"Düşünceye, Basına, Gazetecilere Özgürlük\" yürüyüşü #CANLI",
+     "url": "https://www.youtube.com/watch?v=kN6qLgv-Kug",
+     "zaman": "16 sa. önce yayınlandı",
+     "sure": "17:46",
+     "izlenme": "4,9 bin görüntüleme"
     }
    ]
   },
@@ -124,20 +125,28 @@
    "kanalUrl": "https://www.youtube.com/@ozguruzradyo1/videos",
    "videolar": [
     {
-     "baslik": "Erdoğan yanında İstanbul'u da götürmek istiyor! Can Dündar ve Erk Acarer ile Bilanço",
-     "url": "https://www.youtube.com/watch?v=mbBlmV_MPk0",
-     "zaman": "11 sa. önce",
-     "sure": "44:27",
-     "izlenme": "55 bin görüntüleme"
+     "baslik": "Bahçeli Erdoğan'dan Meclis'i mi İstedi? Can Dündar ve Erk Acarer ile Bilanço",
+     "url": "https://www.youtube.com/watch?v=MFUJ2LBeikM",
+     "zaman": "34 dk. önce",
+     "sure": "7:55",
+     "izlenme": "210 görüntüleme"
     }
    ]
   },
   {
    "ad": "Görkem Sakınmaz",
    "grup": "yapayzeka",
-   "durum": "Yeni video yok",
+   "durum": "okundu",
    "kanalUrl": "https://www.youtube.com/@Gorkem.Sakinmaz/videos",
-   "videolar": []
+   "videolar": [
+    {
+     "baslik": "Zam Nasıl İstenir? Yöneticiye Ne Denir, Ne Zaman Gidilir?",
+     "url": "https://www.youtube.com/watch?v=Dg1maksC9uI",
+     "zaman": "10 sa. önce",
+     "sure": "15:01",
+     "izlenme": "422 görüntüleme"
+    }
+   ]
   },
   {
    "ad": "Muhammed Ogulcan",
@@ -149,59 +158,10 @@
   {
    "ad": "İsa Nurdoğdu",
    "grup": "yapayzeka",
-   "durum": "okundu",
+   "durum": "Yeni video yok",
    "kanalUrl": "https://www.youtube.com/@isanurdogdu/videos",
-   "videolar": [
-    {
-     "baslik": "Yapay Zekâyla 4K Video Üretmenin En Ucuz Yolu! (Seedance 2.5)",
-     "url": "https://www.youtube.com/watch?v=rteRWfg7MwQ",
-     "zaman": "14 sa. önce",
-     "sure": "9:57",
-     "izlenme": "552 görüntüleme"
-    }
-   ]
+   "videolar": []
   }
  ],
- "gunIci": [
-  {
-   "kanal": "Cevheri Güven",
-   "baslik": "ASELSAN'I DA VURMUŞLAR",
-   "url": "https://www.youtube.com/watch?v=r9vh7s_f7jE",
-   "zaman": "22 dk. önce yayınlandı",
-   "sure": "45:26",
-   "izlenme": ""
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "İzmir Harmandalı kayıyor: \"İnsanlar çöpün altında kalacak\"",
-   "url": "https://www.youtube.com/watch?v=C4me6qbY1X0",
-   "zaman": "8 dk. önce",
-   "sure": "6:16",
-   "izlenme": ""
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "Ekrem İmamoğlu ile Mansur Yavaş farkı | Ruşen Çakır yorumluyor",
-   "url": "https://www.youtube.com/watch?v=WdGnLfcyqUc",
-   "zaman": "1 sa. önce",
-   "sure": "14:42",
-   "izlenme": ""
-  },
-  {
-   "kanal": "TR724",
-   "baslik": "Herkes biliyordu, kimse bir şey yapmadı | Kırmızı Pazartesi | Okuma Zamanı",
-   "url": "https://www.youtube.com/watch?v=NukxSS_J_Tg",
-   "zaman": "1 sa. önce",
-   "sure": "26:56",
-   "izlenme": ""
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "YENİ Parti'den \"Düşünceye, Basına, Gazetecilere Özgürlük\" yürüyüşü #CANLI",
-   "url": "https://www.youtube.com/watch?v=kN6qLgv-Kug",
-   "zaman": "3 sa. önce yayınlandı",
-   "sure": "17:46",
-   "izlenme": ""
-  }
- ]
+ "gunIci": []
 }
