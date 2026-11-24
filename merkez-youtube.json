@@ -241,5 +241,38 @@
    "videolar": []
   }
  ],
- "gunIci": []
+ "gunIci": [
+  {
+   "kanal": "TR724",
+   "baslik": "SARAY'DAN TALİMAT. BU İŞİ BİTİRİN! [SERBEST ATIŞ]",
+   "url": "https://www.youtube.com/watch?v=HMMDq9VL3Dw",
+   "zaman": "3 sa. önce",
+   "sure": "8:52",
+   "izlenme": "12 bin görüntüleme"
+  },
+  {
+   "kanal": "TR724",
+   "baslik": "Yandaş kanalda şok; Erdoğan'ı kandırıyorlar! | Medyada Bugün",
+   "url": "https://www.youtube.com/watch?v=eEnqTiM-l9g",
+   "zaman": "3 dk. önce yayınlandı",
+   "sure": "1:04:30",
+   "izlenme": "3,1 bin görüntüleme"
+  },
+  {
+   "kanal": "Medyascope TV",
+   "baslik": "Özgür Özel, YENİ Parti Grup Toplantısı'nda konuşuyor #CANLI",
+   "url": "https://www.youtube.com/watch?v=f7RliVTNNzg",
+   "zaman": "29 dk. önce yayınlandı",
+   "sure": "1:08:42",
+   "izlenme": "1,6 bin görüntüleme"
+  },
+  {
+   "kanal": "Medyascope TV",
+   "baslik": "Devlet Bahçeli, MHP Grup Toplantısı'nda konuşuyor #CANLI",
+   "url": "https://www.youtube.com/watch?v=EzG88ars4-k",
+   "zaman": "1 sa. önce yayınlandı",
+   "sure": "47:11",
+   "izlenme": "2,9 bin görüntüleme"
+  }
+ ]
 }
