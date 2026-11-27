@@ -1,336 +1,308 @@
 {
- "okunma": "25.11.2026 08:33",
- "toplam": 18,
- "kanallar": [
-  {
-   "ad": "Cevheri Güven",
-   "grup": "turkce",
-   "durum": "okundu",
-   "kanalUrl": "https://www.youtube.com/@cevheriguven/videos",
-   "videolar": [
+  "okunma": "28.11.2026 00:01",
+  "toplam": 30,
+  "kanallar": [
     {
-     "baslik": "BENİM HIRSIZIM: FATMA-18",
-     "url": "https://www.youtube.com/watch?v=zXLDXQ_2AN8",
-     "zaman": "11 sa. önce yayınlandı",
-     "sure": "48:11",
-     "izlenme": "446 bin görüntüleme"
+      "ad": "Cevheri Güven",
+      "grup": "turkce",
+      "durum": "okundu",
+      "kanalUrl": "https://www.youtube.com/@cevheriguven/videos",
+      "videolar": [
+        {
+          "baslik": "Fatma-18 nasıl serbest kaldı?  #fatmabetülsayankaya #fonvurgunu",
+          "url": "https://www.youtube.com/watch?v=20m41UUa7-8",
+          "zaman": "10 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        }
+      ]
+    },
+    {
+      "ad": "Adem Yavuz Arslan",
+      "grup": "turkce",
+      "durum": "okundu",
+      "kanalUrl": "https://www.youtube.com/@AdemYavuzArslanTV/videos",
+      "videolar": [
+        {
+          "baslik": "FON SOYGUNU ARTIK KOMEDİYE DÖNDÜ; 'HAİNLİK' EDİP PARANIZI İSTEMEYİN!",
+          "url": "https://www.youtube.com/watch?v=qTmmuKHaQ-w",
+          "zaman": "1 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        },
+        {
+          "baslik": "ERDOĞAN'IN İMZASINI MI TAKLİT ETTİLER YANİ !",
+          "url": "https://www.youtube.com/watch?v=QTop7ZD2MhQ",
+          "zaman": "16 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        },
+        {
+          "baslik": "AKP ÇOCUKLARI BÜYÜDÜ, PARAŞÜTLE VALİ OLUYORLAR",
+          "url": "https://www.youtube.com/watch?v=ely8msrKXcE",
+          "zaman": "16 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        },
+        {
+          "baslik": "PARA YOK, İSTERSENİZ HAİN OLURSUNUZ !",
+          "url": "https://www.youtube.com/watch?v=78BwcIB2GW8",
+          "zaman": "16 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        },
+        {
+          "baslik": "SARAY'IN MESAJI: PARA YOK, LİSTE YOK! ÖNÜMÜZDEKİ SOYGUNLARA BAKACAĞIZ!",
+          "url": "https://www.youtube.com/watch?v=A00kUTe0elQ",
+          "zaman": "23 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        }
+      ]
+    },
+    {
+      "ad": "TR724",
+      "grup": "turkce",
+      "durum": "okundu",
+      "kanalUrl": "https://www.youtube.com/@TR724/videos",
+      "videolar": [
+        {
+          "baslik": "Fon skandalı dikiş tutmuyor: 70 milyarlık tek kişilik vurgun iddiası | Parametre",
+          "url": "https://www.youtube.com/watch?v=hu7uJNZm0ik",
+          "zaman": "4 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        },
+        {
+          "baslik": "Erdoğan'ın baskın seçim planı! 'Sinyaller var ama...' | Ajans",
+          "url": "https://www.youtube.com/watch?v=C5hlABSmi8k",
+          "zaman": "8 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        },
+        {
+          "baslik": "Fon işi buraya  kadarmış! #fonvurgunu #akıngürlek #mehmetşimşek #cevdetyılmaz",
+          "url": "https://www.youtube.com/watch?v=7PzgQ_oAlzo",
+          "zaman": "6 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        },
+        {
+          "baslik": "El birliği ile kapattılar; omurga tamamlanmış! | Medyada Bugün",
+          "url": "https://www.youtube.com/watch?v=2HVvn5KW9-4",
+          "zaman": "10 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        },
+        {
+          "baslik": "BERAT'IN ADAMI GİTTİ, BİLAL'İN ADAMI GELDİ![ SERBEST ATIŞ]",
+          "url": "https://www.youtube.com/watch?v=Cmq5LUAl6Ag",
+          "zaman": "14 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        }
+      ]
+    },
+    {
+      "ad": "Turhan Bozkurt",
+      "grup": "turkce",
+      "durum": "Yeni video yok",
+      "kanalUrl": "https://www.youtube.com/@TurhanBozkurt/videos",
+      "videolar": []
+    },
+    {
+      "ad": "Said Sefa",
+      "grup": "turkce",
+      "durum": "okundu",
+      "kanalUrl": "https://www.youtube.com/@SaidSefa/videos",
+      "videolar": [
+        {
+          "baslik": "ERDOĞAN'IN HER ŞEYDEN HABERİ VARMIŞ",
+          "url": "https://www.youtube.com/watch?v=gdqt1HcOoAU",
+          "zaman": "2 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        }
+      ]
+    },
+    {
+      "ad": "Deli Haber TV",
+      "grup": "turkce",
+      "durum": "okundu",
+      "kanalUrl": "https://www.youtube.com/@DeliHaberTv/videos",
+      "videolar": [
+        {
+          "baslik": "AÇLIKTAN ÖLECEĞİZ! CUMHURBAŞKANI OLAMAYACAK! SARAY’DAN BÜYÜK ÖRTBAS!",
+          "url": "https://www.youtube.com/watch?v=TcJ4Va_Dbpk",
+          "zaman": "16 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        }
+      ]
+    },
+    {
+      "ad": "MC TV",
+      "grup": "turkce",
+      "durum": "Yeni video yok",
+      "kanalUrl": "https://www.youtube.com/@MCTV02/videos",
+      "videolar": []
+    },
+    {
+      "ad": "Medyascope TV",
+      "grup": "turkce",
+      "durum": "okundu",
+      "kanalUrl": "https://www.youtube.com/@medyascope_tv/videos",
+      "videolar": [
+        {
+          "baslik": "Eski CHP Genel Başkanı Hikmet Çetin için TBMM'de tören düzenleniyor #CANLI",
+          "url": "https://www.youtube.com/watch?v=86lncYbO41A",
+          "zaman": "22 dk. önce",
+          "sure": "",
+          "izlenme": ""
+        },
+        {
+          "baslik": "Bayram Bozyel: “Ümit Özdağ açıkça bizi ölümle tehdit etti” #shorts",
+          "url": "https://www.youtube.com/watch?v=uxd50p46DJY",
+          "zaman": "45 dk. önce",
+          "sure": "",
+          "izlenme": ""
+        },
+        {
+          "baslik": "MGK’dan çözüm süreci kararı çıkacak mı? Vahap Coşkun anlattı #shorts",
+          "url": "https://www.youtube.com/watch?v=qqOVb0iVRtA",
+          "zaman": "1 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        },
+        {
+          "baslik": "Fon vurgununda Mehmet Şimşek’in sorumluluğu ne? #shorts",
+          "url": "https://www.youtube.com/watch?v=-jsKRrzRcTI",
+          "zaman": "2 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        },
+        {
+          "baslik": "İran'da iki havalimanı bombalandı #shorts",
+          "url": "https://www.youtube.com/watch?v=ZMHUJ2wpSuw",
+          "zaman": "3 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        },
+        {
+          "baslik": "Çözüm sürecinde MGK engeli mi? Kartal mitinginde hangi talepler öne çıkıyor? | Bi'de Buradan Bak",
+          "url": "https://www.youtube.com/watch?v=McFD1rMVNO0",
+          "zaman": "4 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        },
+        {
+          "baslik": "Pınar Türenç’ten iktidara: “Siz bizden mi korkuyorsunuz?” #shorts",
+          "url": "https://www.youtube.com/watch?v=I9YNN7xRr9k",
+          "zaman": "4 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        },
+        {
+          "baslik": "Kahire'deki tanker faciasının güvenlik kamerası görüntüleri yayımlandı #shorts",
+          "url": "https://www.youtube.com/watch?v=XgZRMFPsraM",
+          "zaman": "6 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        },
+        {
+          "baslik": "Cumhuriyet’te iktidar, sadakat ve servet | Mehmet Mithat Bey’in Münasebetsiz Tarihi | Arda Ekşigil",
+          "url": "https://www.youtube.com/watch?v=9bOpV-OSxyI",
+          "zaman": "6 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        },
+        {
+          "baslik": "Fon krizi sahiden çözüldü mü? | Çözüm süreci tartışmaları | Haftaya Bakış #CANLI",
+          "url": "https://www.youtube.com/watch?v=zYlbVsfekFY",
+          "zaman": "11 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        },
+        {
+          "baslik": "Fon krizi AKP seçmeni için bir dönüm noktası mı? | Demirtaş’ın açıklaması | Konuşmazsak Olmaz",
+          "url": "https://www.youtube.com/watch?v=JLw1o71mk9Y",
+          "zaman": "6 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        },
+        {
+          "baslik": "Hikmet Çetin son yolculuğuna uğurlandı: Cenaze töreninde neler oldu?",
+          "url": "https://www.youtube.com/watch?v=Hz6GVq7wslY",
+          "zaman": "7 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        },
+        {
+          "baslik": "Fon bitti yapı paydos...mu? | Hayri Kozanoğlu anlatıyor | Rivayet Muhtelif #CANLI",
+          "url": "https://www.youtube.com/watch?v=ONBCh02GvqI",
+          "zaman": "7 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        },
+        {
+          "baslik": "Fon dosyası kapatılıyor mu? | İmamoğlu’nun diploması ve Halk TV operasyonu | Mütalaa",
+          "url": "https://www.youtube.com/watch?v=3kgWKpRvc6U",
+          "zaman": "8 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        },
+        {
+          "baslik": "AKP Genel Merkezi’nde yapılan toplantı neye işaret ediyor? #shorts",
+          "url": "https://www.youtube.com/watch?v=eNIezLQk_ys",
+          "zaman": "8 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        }
+      ]
+    },
+    {
+      "ad": "#ÖZGÜRÜZ",
+      "grup": "turkce",
+      "durum": "Yeni video yok",
+      "kanalUrl": "https://www.youtube.com/@ozguruzradyo1/videos",
+      "videolar": []
+    },
+    {
+      "ad": "Görkem Sakınmaz",
+      "grup": "yapayzeka",
+      "durum": "Yeni video yok",
+      "kanalUrl": "https://www.youtube.com/@Gorkem.Sakinmaz/videos",
+      "videolar": []
+    },
+    {
+      "ad": "Muhammed Ogulcan",
+      "grup": "yapayzeka",
+      "durum": "Yeni video yok",
+      "kanalUrl": "https://www.youtube.com/@MuhammedOgulcan/videos",
+      "videolar": []
+    },
+    {
+      "ad": "İsa Nurdoğdu",
+      "grup": "yapayzeka",
+      "durum": "okundu",
+      "kanalUrl": "https://www.youtube.com/@isanurdogdu/videos",
+      "videolar": [
+        {
+          "baslik": "Artık PC'ye Gerek YOK! Claude Ajanlarım 7/24 Bulutta",
+          "url": "https://www.youtube.com/watch?v=8045ODafJRM",
+          "zaman": "9 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        },
+        {
+          "baslik": "Claude’a Otomatik Ses Efekti Eklet",
+          "url": "https://www.youtube.com/watch?v=uGJCJ9ivN6I",
+          "zaman": "11 sa. önce",
+          "sure": "",
+          "izlenme": ""
+        }
+      ]
     }
-   ]
-  },
-  {
-   "ad": "Adem Yavuz Arslan",
-   "grup": "turkce",
-   "durum": "okundu",
-   "kanalUrl": "https://www.youtube.com/@AdemYavuzArslanTV/videos",
-   "videolar": [
-    {
-     "baslik": "HAYATİ YAZICI KİMİ İŞARET ETTİ? FATMA BETÜL'ÜN TAHLİYESİ VE MİT'İN UYARISI!",
-     "url": "https://www.youtube.com/watch?v=sW4gzeESV6g",
-     "zaman": "8 sa. önce yayınlandı",
-     "sure": "58:17",
-     "izlenme": "65 bin görüntüleme"
-    }
-   ]
-  },
-  {
-   "ad": "TR724",
-   "grup": "turkce",
-   "durum": "okundu",
-   "kanalUrl": "https://www.youtube.com/@TR724/videos",
-   "videolar": [
-    {
-     "baslik": "Fatma Betül Sayan’a ‘Yeter’ tahliyesi! | Ne Yapılabilir",
-     "url": "https://www.youtube.com/watch?v=itJrZOfkFRk",
-     "zaman": "13 sa. önce",
-     "sure": "43:53",
-     "izlenme": "9,7 bin görüntüleme"
-    },
-    {
-     "baslik": "SARAY'DAN TALİMAT. BU İŞİ BİTİRİN! [SERBEST ATIŞ]",
-     "url": "https://www.youtube.com/watch?v=HMMDq9VL3Dw",
-     "zaman": "23 sa. önce",
-     "sure": "8:52",
-     "izlenme": "33 bin görüntüleme"
-    },
-    {
-     "baslik": "Kızına daha fazla kıyamadı! Bu neyin cesareti? | Ajans",
-     "url": "https://www.youtube.com/watch?v=Mjcp2o4qdfc",
-     "zaman": "15 sa. önce yayınlandı",
-     "sure": "1:04:19",
-     "izlenme": "39 bin görüntüleme"
-    },
-    {
-     "baslik": "Yandaş kanalda şok; Erdoğan'ı kandırıyorlar! | Medyada Bugün",
-     "url": "https://www.youtube.com/watch?v=eEnqTiM-l9g",
-     "zaman": "19 sa. önce yayınlandı",
-     "sure": "1:04:30",
-     "izlenme": "26 bin görüntüleme"
-    }
-   ]
-  },
-  {
-   "ad": "Turhan Bozkurt",
-   "grup": "turkce",
-   "durum": "Yeni video yok",
-   "kanalUrl": "https://www.youtube.com/@TurhanBozkurt/videos",
-   "videolar": []
-  },
-  {
-   "ad": "Said Sefa",
-   "grup": "turkce",
-   "durum": "Yeni video yok",
-   "kanalUrl": "https://www.youtube.com/@SaidSefa/videos",
-   "videolar": []
-  },
-  {
-   "ad": "Deli Haber TV",
-   "grup": "turkce",
-   "durum": "okundu",
-   "kanalUrl": "https://www.youtube.com/@DeliHaberTv/videos",
-   "videolar": [
-    {
-     "baslik": "GEREKEN YAPILDI! BAHÇELİ KILICA SARILDI! ERDOĞAN’A ZÜLFİKAR İLE GÖZDAĞI!",
-     "url": "https://www.youtube.com/watch?v=yo-wAbp3NOY",
-     "zaman": "1 sa. önce",
-     "sure": "17:27",
-     "izlenme": "104 görüntüleme"
-    }
-   ]
-  },
-  {
-   "ad": "MC TV",
-   "grup": "turkce",
-   "durum": "Yeni video yok",
-   "kanalUrl": "https://www.youtube.com/@MCTV02/videos",
-   "videolar": []
-  },
-  {
-   "ad": "Medyascope TV",
-   "grup": "turkce",
-   "durum": "okundu",
-   "kanalUrl": "https://www.youtube.com/@medyascope_tv/videos",
-   "videolar": [
-    {
-     "baslik": "Fatma Betül Sayan Kaya'nın tahliyesi: İktidar kendi ayağına mı sıktı? | Ruşen Çakır yorumluyor",
-     "url": "https://www.youtube.com/watch?v=_zjoU0ijAII",
-     "zaman": "1 sa. önce",
-     "sure": "15:34",
-     "izlenme": "3,1 bin görüntüleme"
-    },
-    {
-     "baslik": "Büyük Üstat Remzi Sanver masonluğu ve sekiz aylık tutukluluğunu anlatıyor",
-     "url": "https://www.youtube.com/watch?v=u0YZK-j3hfQ",
-     "zaman": "9 sa. önce",
-     "sure": "32:50",
-     "izlenme": "23 bin görüntüleme"
-    },
-    {
-     "baslik": "Akıllı cihazlar ne kadar güvenli? Teknoloji dünyasında çip ve RAM krizi | Ecevit Bıktım | Netizen",
-     "url": "https://www.youtube.com/watch?v=YUTAsLJajoY",
-     "zaman": "12 sa. önce",
-     "sure": "46:18",
-     "izlenme": "1,2 bin görüntüleme"
-    },
-    {
-     "baslik": "Kürt siyasetçilerden sürece eleştiriler: Kürdistan Sosyalist Partisi Başkanı Bayram Bozyel anlatıyor",
-     "url": "https://www.youtube.com/watch?v=gK3RrXs_eHc",
-     "zaman": "15 sa. önce",
-     "sure": "23:03",
-     "izlenme": "13 bin görüntüleme"
-    },
-    {
-     "baslik": "Meclis Genel Kurulu görüşmeleri devam ediyor #CANLI",
-     "url": "https://www.youtube.com/watch?v=SwuVd86k090",
-     "zaman": "10 sa. önce yayınlandı",
-     "sure": "6:21:15",
-     "izlenme": "12 bin görüntüleme"
-    },
-    {
-     "baslik": "Kemal Kılıçdaroğlu, CHP Grup Toplantısı'nda konuşuyor #CANLI",
-     "url": "https://www.youtube.com/watch?v=O3zxrkKzpsI",
-     "zaman": "18 sa. önce yayınlandı",
-     "sure": "51:26",
-     "izlenme": "2,8 bin görüntüleme"
-    },
-    {
-     "baslik": "Tülay Hatimoğulları, DEM Parti Grup Toplantısı'nda konuşuyor #CANLI",
-     "url": "https://www.youtube.com/watch?v=x-QXkRDqRkQ",
-     "zaman": "18 sa. önce yayınlandı",
-     "sure": "55:26",
-     "izlenme": "2,7 bin görüntüleme"
-    },
-    {
-     "baslik": "Özgür Özel, YENİ Parti Grup Toplantısı'nda konuşuyor #CANLI",
-     "url": "https://www.youtube.com/watch?v=f7RliVTNNzg",
-     "zaman": "19 sa. önce yayınlandı",
-     "sure": "1:08:42",
-     "izlenme": "18 bin görüntüleme"
-    },
-    {
-     "baslik": "Devlet Bahçeli, MHP Grup Toplantısı'nda konuşuyor #CANLI",
-     "url": "https://www.youtube.com/watch?v=EzG88ars4-k",
-     "zaman": "21 sa. önce yayınlandı",
-     "sure": "47:19",
-     "izlenme": "5,2 bin görüntüleme"
-    }
-   ]
-  },
-  {
-   "ad": "#ÖZGÜRÜZ",
-   "grup": "turkce",
-   "durum": "okundu",
-   "kanalUrl": "https://www.youtube.com/@ozguruzradyo1/videos",
-   "videolar": [
-    {
-     "baslik": "Mehmet Uçum'dan DEM Parti'ye Sert Ayar: \"Vatandaşı Ürkütmeyin!\"",
-     "url": "https://www.youtube.com/watch?v=rfxSIeBs608",
-     "zaman": "16 sa. önce",
-     "sure": "7:04",
-     "izlenme": "2,9 bin görüntüleme"
-    },
-    {
-     "baslik": "Özgür Özel'in Tek Hamlesi Saray'ın Bütün Kartlarını Böyle Dağıttı!",
-     "url": "https://www.youtube.com/watch?v=djssmQs8ujE",
-     "zaman": "18 sa. önce",
-     "sure": "9:07",
-     "izlenme": "57 bin görüntüleme"
-    }
-   ]
-  },
-  {
-   "ad": "Görkem Sakınmaz",
-   "grup": "yapayzeka",
-   "durum": "Yeni video yok",
-   "kanalUrl": "https://www.youtube.com/@Gorkem.Sakinmaz/videos",
-   "videolar": []
-  },
-  {
-   "ad": "Muhammed Ogulcan",
-   "grup": "yapayzeka",
-   "durum": "Yeni video yok",
-   "kanalUrl": "https://www.youtube.com/@MuhammedOgulcan/videos",
-   "videolar": []
-  },
-  {
-   "ad": "İsa Nurdoğdu",
-   "grup": "yapayzeka",
-   "durum": "Yeni video yok",
-   "kanalUrl": "https://www.youtube.com/@isanurdogdu/videos",
-   "videolar": []
-  }
- ],
- "gunIci": [
-  {
-   "kanal": "TR724",
-   "baslik": "KİMSE UMRUMUZDA DEĞİL TAHLİYESİ! [SERBEST ATIŞ]",
-   "url": "https://www.youtube.com/watch?v=7yWY-RfKgnw",
-   "zaman": "3 sa. önce",
-   "sure": "10:57",
-   "izlenme": ""
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "Müsavat Dervişoğlu, İYİ Parti Grup Toplantısı'nda konuşuyor #CANLI",
-   "url": "https://www.youtube.com/watch?v=A2OVG64L6VI",
-   "zaman": "1 sa. önce yayınlandı",
-   "sure": "52:47",
-   "izlenme": ""
-  },
-  {
-   "kanal": "#ÖZGÜRÜZ",
-   "baslik": "Can Dündar yorumladı: FİRARİ ASLAN VE YOUTUBE",
-   "url": "https://www.youtube.com/watch?v=ApcQy67qAPg",
-   "zaman": "2 sa. önce",
-   "sure": "2:50",
-   "izlenme": ""
-  },
-  {
-   "kanal": "İsa Nurdoğdu",
-   "baslik": "Gemini 4 Neon: Saçma Derecede İyi (ve Ucuz)",
-   "url": "https://www.youtube.com/watch?v=XOa703QnG3k",
-   "zaman": "8 dk. önce",
-   "sure": "11:22",
-   "izlenme": ""
-  },
-  {
-   "kanal": "TR724",
-   "baslik": "'Hayati' kayıp! Adım adım Saray'a; Erdoğan çıkış bulamıyor | Ajans",
-   "url": "https://www.youtube.com/watch?v=wLn-5kZr0OE",
-   "zaman": "1 sa. önce yayınlandı",
-   "sure": "1:24:54",
-   "izlenme": "20 bin görüntüleme"
-  },
-  {
-   "kanal": "TR724",
-   "baslik": "'Tayyip bey, Fatma hanımın tehdidine bu kadar dayanabildi' | Medyada Bugün",
-   "url": "https://www.youtube.com/watch?v=-HyI4beJaIQ",
-   "zaman": "5 sa. önce yayınlandı",
-   "sure": "1:37:24",
-   "izlenme": "38 bin görüntüleme"
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "YENİ Parti İzleme Komisyonu’na neden katılmadı? Sürece kim mecbur? | Kemal Can ile 5 Soru 10 Cevap",
-   "url": "https://www.youtube.com/watch?v=TxJ1wD-zkR8",
-   "zaman": "9 dk. önce",
-   "sure": "44:28",
-   "izlenme": "283 görüntüleme"
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "Süreç ve İmralı hakkında doğrular ve yanlışlar | Ayşegül Doğan ilk kez anlatıyor",
-   "url": "https://www.youtube.com/watch?v=TGUd7OkMNb4",
-   "zaman": "2 sa. önce",
-   "sure": "29:24",
-   "izlenme": "3,5 bin görüntüleme"
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "YENİ Parti'nin gidişatı | Uzman konuklar değerlendiriyor #CANLI",
-   "url": "https://www.youtube.com/watch?v=6H9EZJ1B4KA",
-   "zaman": "43 dk. önce yayınlandı",
-   "sure": "1:24:33",
-   "izlenme": "1,6 bin görüntüleme"
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "YENİ Parti’nin yeni parti sözcüsünden ilk açıklama!Özgür Özel'in A takımı belli oldu #CANLI",
-   "url": "https://www.youtube.com/watch?v=xaEEV9j9WJI",
-   "zaman": "3 sa. önce yayınlandı",
-   "sure": "17:01",
-   "izlenme": "3 bin görüntüleme"
-  },
-  {
-   "kanal": "Medyascope TV",
-   "baslik": "Tarihi başarısızlık mı? COP31 Antalya Zirvesi nasıl hatırlanacak? #CANLI",
-   "url": "https://www.youtube.com/watch?v=aS7vpabiE-k",
-   "zaman": "4 sa. önce yayınlandı",
-   "sure": "45:27",
-   "izlenme": "2,7 bin görüntüleme"
-  },
-  {
-   "kanal": "#ÖZGÜRÜZ",
-   "baslik": "Can Dündar yorumladı: ERDOĞAN'DAN İKİ GERİ ADIM",
-   "url": "https://www.youtube.com/watch?v=tHSkfCpfOpA",
-   "zaman": "4 sa. önce",
-   "sure": "2:48",
-   "izlenme": "5,7 bin görüntüleme"
-  },
-  {
-   "kanal": "#ÖZGÜRÜZ",
-   "baslik": "\"Özgür Özel'i Alacaklar mı?\" Değil, \"Toplum Verecek mi?\" Sorusu Gündemde!",
-   "url": "https://www.youtube.com/watch?v=BsB4cfHEOC4",
-   "zaman": "5 sa. önce",
-   "sure": "8:38",
-   "izlenme": "3,7 bin görüntüleme"
-  },
-  {
-   "kanal": "Muhammed Ogulcan",
-   "baslik": "Farkında Olmadan Claude Limitini Çöpe Atıyorsun ! 3 Küçük Alışkanlık !",
-   "url": "https://www.youtube.com/watch?v=oZScQpScG58",
-   "zaman": "2 sa. önce",
-   "sure": "10:12",
-   "izlenme": "370 görüntüleme"
-  }
- ]
+  ],
+  "gunIci": []
 }
